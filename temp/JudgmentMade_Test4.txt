@@ -1,0 +1,138 @@
+1 Give me all taikonauts.
+taikonauts
+
+2 How many languages are spoken in Colombia?
+languages
+
+3 Which poet wrote the most books?
+poet
+
+4 How many programming languages are there?
+languages
+
+5 Give me all Dutch parties.
+parties
+
+6 When was Carlo Giuliani shot?
+When
+
+8 Which rivers flow into a German lake?
+rivers
+
+9 How heavy is Jupiter's lightest moon?
+heavy
+
+10 Who is the youngest Darts player?
+player
+
+11 Give me all animals that are extinct.
+animals
+
+12 How many pages does War and Peace have?
+pages
+
+13 Which ingredients do I need for carrot cake?
+ingredients
+
+14 What is the most frequent death cause?
+cause
+
+15 Who has Tom Cruise been married to?
+Who
+
+16 Who is the tallest player of the Atlanta Falcons?
+player
+
+17 What is the bridge with the longest span?
+bridge
+
+18 Give me all films produced by Steven Spielberg with a budget of at least $80 million.
+films
+
+20 Which actor was casted in the most movies?
+actor
+
+21 Where was Bach born?
+Where
+
+22 Which of Tim Burton's films had the highest budget?
+films
+
+24 Who are the four youngest MVP basketball players?
+players
+
+25 What are the top-10 action role-playing video games according to IGN?
+games
+
+26 Give me all actors who were born in Berlin.
+actors
+
+27 Give me all actors who were born in Paris after 1950.
+actors
+
+28 What was Brazil's lowest rank in the FIFA World Ranking?
+rank
+
+29 Give me all Australian metalcore bands.
+bands
+
+30 When is Halloween?
+When
+
+31 How many inhabitants does the largest city in Canada have?
+inhabitants
+
+32 In which countries can you pay using the West African CFA franc?
+countries
+
+33 Give me the capitals of all countries that the Himalayas run through.
+capitals
+
+34 Who was the first to climb Mount Everest?
+Who
+
+35 To which artistic movement did the painter of The Three Dancers belong?
+movement
+
+36 Which pope succeeded John Paul II?
+pope
+
+37 What was the last movie with Alec Guinness?
+movie
+
+38 How many James Bond movies are there?
+movies
+
+39 Which actor played Chewbacca?
+actor
+
+40 Give me the grandchildren of Bruce Lee.
+grandchildren
+
+41 Give me all writers that won the Nobel Prize in literature.
+writers
+
+42 What is the official color of the University of Oxford?
+color
+
+43 Give me all Swedish oceanographers.
+oceanographers
+
+44 How deep is Lake Placid?
+deep
+
+46 Which spaceflights were launched from Baikonur?
+spaceflights
+
+47 Give me all actors called Baldwin.
+actors
+
+48 What does CPU stand for?
+What
+
+49 In which studio did the Beatles record their first album?
+studio
+
+50 How many gold medals did Michael Phelps win at the 2008 Olympics?
+medals
+

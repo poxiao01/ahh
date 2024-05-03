@@ -1,0 +1,288 @@
+1 Who was the doctoral supervisor of Albert Einstein?
+supervisor
+
+3 Who wrote the song Hotel California?
+Who
+
+4 Who was on the Apollo 11 mission?
+mission
+
+5 Which electronics companies were founded in Beijing?
+companies
+
+6 What is in a chocolate chip cookie?
+cookie
+
+7 What is the atmosphere of the Moon composed of?
+atmosphere
+
+8 How many movies did Park Chan-wook direct?
+movies
+
+9 Who are the developers of DBpedia?
+developers
+
+10 Which Indian company has the most employees?
+company
+
+11 What is the name of the school where Obama's wife studied?
+name
+
+12 Where does Piccadilly start?
+Where
+
+13 What is the capital of Cameroon?
+capital
+
+14 When did the Boston Tea Party take place?
+When
+
+15 Who played Gus Fring in Breaking Bad?
+Who
+
+16 Who wrote Harry Potter?
+Who
+
+17 Which actors play in Big Bang Theory?
+actors
+
+18 What is the largest country in the world?
+country
+
+19 Who is the most powerful Jedi?
+Jedi
+
+20 How many goals did Pel   score?
+goals
+
+21 Who is the president of Eritrea?
+president
+
+22 Which computer scientist won an oscar?
+scientist
+
+23 Who created Family Guy?
+Who
+
+24 How many people live in Poland?
+people
+
+25 To which party does the mayor of Paris belong?
+party
+
+26 Who does the voice of Bart Simpson?
+Who
+
+27 Who composed the soundtrack for Cameron's Titanic?
+Who
+
+28 When did Boris Becker end his active career?
+When
+
+29 Show me all basketball players that are higher than 2 meters.
+players
+
+30 What country is Sitecore from?
+country
+
+31 Which country was Bill Gates born in?
+country
+
+32 Who developed Slack?
+Who
+
+33 In which city did Nikos Kazantzakis die?
+city
+
+34 How many grand-children did Jacques Cousteau have?
+children
+
+35 Which films did Stanley Kubrick direct?
+films
+
+37 How many seats does the home stadium of FC Porto have?
+seats
+
+38 Show me all books in Asimov's Foundation series.
+books
+
+39 Which movies star both Liz Taylor and Richard Burton?
+movies
+
+40 In which city are the headquarters of the United Nations?
+city
+
+41 In which city was the president of Montenegro born?
+city
+
+42 Which writers studied in Istanbul?
+writers
+
+43 Who is the mayor of Paris?
+mayor
+
+44 What is the full name of Prince Charles?
+name
+
+45 What is the longest river in China?
+river
+
+46 Who discovered Ceres?
+Who
+
+47 When did princess Diana die?
+When
+
+48 What do ants eat?
+ants
+
+49 Who is the host of the BBC Wildlife Specials?
+host
+
+50 How many moons does Mars have?
+moons
+
+51 What was the first Queen album?
+album
+
+53 Give me a list of all Canadians that reside in the U.S.
+list
+
+54 Where is Syngman Rhee buried?
+Where
+
+55 In which countries do people speak Japanese?
+countries
+
+56 Who is the king of the Netherlands?
+king
+
+57 When did the Dodo become extinct?
+When
+
+58 Show me all Czech movies.
+movies
+
+59 Which rivers flow into the North Sea?
+rivers
+
+60 When did Operation Overlord commence?
+When
+
+61 Where do the Red Sox play?
+Where
+
+62 In which time zone is Rome?
+zone
+
+63 Give me a list of all critically endangered birds.
+list
+
+64 How much did the Lego Movie cost?
+much
+
+65 What was the original occupation of the inventor of Lego?
+occupation
+
+66 Which countries have more than ten volcanoes?
+countries
+
+67 Show me all U.S. states.
+states
+
+68 Who wrote the Game of Thrones theme?
+Who
+
+69 How many calories does a baguette have?
+calories
+
+71 Which companies produce hovercrafts?
+companies
+
+72 How many emperors did China have?
+emperors
+
+73 Show me hiking trails in the Grand Canyon where there's no danger of flash floods.
+trails
+
+74 In which ancient empire could you pay with cocoa beans?
+empire
+
+75 How did Michael Jackson die?
+How
+
+76 Which space probes were sent into orbit around the sun?
+probes
+
+77 When was Coca Cola invented?
+When
+
+78 What is the biggest stadium in Spain?
+stadium
+
+79 On which day is Columbus Day?
+day
+
+80 How short is the shortest active NBA player?
+player
+
+81 Whom did Lance Bass marry?
+Whom
+
+82 What form of government does Russia have?
+form
+
+83 What movies does Jesse Eisenberg play in?
+movies
+
+84 What color expresses loyalty?
+color
+
+85 Show me all museums in London.
+museums
+
+86 Give me all South American countries.
+countries
+
+87 Who is the coach of Ankara's ice hockey team?
+coach
+
+88 Who is the son of Sonny and Cher?
+son
+
+89 What are the five boroughs of New York?
+boroughs
+
+90 Show me Hemingway's autobiography.
+autobiography
+
+91 What kind of music did Lou Reed play?
+music
+
+92 In which city does Sylvester Stallone live?
+city
+
+93 Who was Vincent van Gogh inspired by?
+Who
+
+94 What are the names of the Teenage Mutant Ninja Turtles?
+names
+
+95 What are the zodiac signs?
+What
+
+96 What languages do they speak in Pakistan?
+What
+
+97 Who became president after JFK died?
+president
+
+98 In what city is the Heineken brewery?
+city
+
+99 What is Elon Musk famous for?
+famous
+
+100 What is Batman's real name?
+name
+

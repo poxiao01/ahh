@@ -1,0 +1,8 @@
+1.Which companies are in the computer software industry?
+ÒÉÎÊ´Ê£ºcompanies
+('det': ['companies','Which'], ['industry','the'])
+('nsubj': ['industry','companies'])
+('cop': ['industry','are'])
+('case': ['industry','in'])
+('root': ['industry','industry'])
+

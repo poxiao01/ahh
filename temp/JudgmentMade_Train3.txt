@@ -1,0 +1,273 @@
+1 Give me all female Russian astronauts.
+astronauts
+
+2 Give me the birthdays of all actors of the television show Charmed.
+birthdays
+
+3 Who is the daughter of Ingrid Bergman married to?
+Who
+
+4 Which river does the Brooklyn Bridge cross?
+river
+
+5 How many monarchical countries are there in Europe?
+countries
+
+6 In which city did John F. Kennedy die?
+city
+
+8 Which states of Germany are governed by the Social Democratic Party?
+states
+
+9 Which U.S. states possess gold minerals?
+states
+
+10 In which country does the Nile start?
+country
+
+11 Which countries have places with more than two caves?
+countries
+
+13 Which classis do tree frogs belong to?
+classis
+
+14 How tall is Claudia Schiffer?
+tall
+
+15 Who created Goofy?
+Who
+
+16 Give me the capitals of all countries in Africa.
+capitals
+
+17 Give me all cities in New Jersey with more than 100000 inhabitants.
+cities
+
+18 Which museum exhibits The Scream by Munch?
+museum
+
+20 How many employees does IBM have?
+employees
+
+21 Which states border Illinois?
+states
+
+22 In which country is the Limerick Lake?
+country
+
+23 Which television shows were created by Walt Disney?
+television
+
+24 Which mountain is the highest after the Annapurna?
+mountain
+
+25 In which films directed by Garry Marshall was Julia Roberts starring?
+films
+
+26 Which bridges are of the same type as the Manhattan Bridge?
+bridges
+
+28 Which European countries have a constitutional monarchy?
+countries
+
+29 Which awards did WikiLeaks win?
+awards
+
+30 Which state of the USA has the highest population density?
+state
+
+31 What is the currency of the Czech Republic?
+currency
+
+32 Which countries in the European Union adopted the Euro?
+countries
+
+33 What is the area code of Berlin?
+code
+
+34 Which countries have more than two official languages?
+countries
+
+35 Who is the owner of Universal Studios?
+owner
+
+36 Through which countries does the Yenisei river flow?
+countries
+
+37 When did Latvia join the EU?
+When
+
+38 Which monarchs of the United Kingdom were married to a German?
+monarchs
+
+39 When was the Battle of Gettysburg?
+When
+
+40 What is the highest mountain in Australia?
+mountain
+
+41 Give me all soccer clubs in Spain.
+clubs
+
+42 What are the official languages of the Philippines?
+languages
+
+43 Who is the mayor of New York City?
+mayor
+
+44 Who designed the Brooklyn Bridge?
+Who
+
+45 Which telecommunications organizations are located in Belgium?
+organizations
+
+47 What is the highest place of Karakoram?
+place
+
+48 Give me the homepage of Forbes.
+homepage
+
+49 Give me all companies in the advertising industry.
+companies
+
+50 What did Bruce Carver die from?
+What
+
+51 Give me all school types.
+types
+
+52 Which presidents were born in 1945?
+presidents
+
+53 Give me all presidents of the United States.
+presidents
+
+54 Who was the wife of U.S. president Lincoln?
+wife
+
+55 Who developed the video game World of Warcraft?
+Who
+
+56 What is the official website of Tom Cruise?
+website
+
+57 List all episodes of the first season of the HBO television series The Sopranos!
+episodes
+
+58 Who produced the most films?
+Who
+
+59 Give me all people with first name Jimmy.
+people
+
+61 Which mountains are higher than the Nanga Parbat?
+mountains
+
+62 Who created Wikipedia?
+Who
+
+63 Give me all actors starring in Last Action Hero.
+actors
+
+64 Which software has been developed by organizations founded in California?
+software
+
+65 Which companies work in the aerospace industry as well as on nuclear reactor technology?
+companies
+
+67 Give me the websites of companies with more than 500000 employees.
+websites
+
+68 Which actors were born in Germany?
+actors
+
+69 Which caves have more than 3 entrances?
+caves
+
+70 Give me all films produced by Hal Roach.
+films
+
+71 Give me all video games published by Mean Hamster Software.
+games
+
+72 Which languages are spoken in Estonia?
+languages
+
+73 Who owns Aldi?
+Who
+
+74 Which capitals in Europe were host cities of the summer olympic games?
+capitals
+
+75 Who has been the 5th president of the United States of America?
+president
+
+76 How many films did Hal Roach produce?
+films
+
+77 Which music albums contain the song Last Christmas?
+albums
+
+78 Give me all books written by Danielle Steel.
+books
+
+79 Which airports are located in California, USA?
+airports
+
+80 Give me all Canadian Grunge record labels.
+record
+
+81 Which country has the most official languages?
+country
+
+82 In which programming language is GIMP written?
+language
+
+83 Who produced films starring Natalie Portman?
+Who
+
+84 Give me all movies with Tom Cruise.
+movies
+
+85 In which films did Julia Roberts as well as Richard Gere play?
+films
+
+86 Give me all female German chancellors.
+chancellors
+
+87 Who wrote the book Les Piliers de la terre?
+Who
+
+88 How many films did Leonardo DiCaprio star in?
+films
+
+89 Give me all soccer clubs in the Premier League.
+clubs
+
+90 When was Capcom founded?
+When
+
+91 Which organizations were founded in 1950?
+organizations
+
+92 What is the highest mountain?
+mountain
+
+94 Which budget did the first movie of Zdenek Sverak have?
+budget
+
+95 How many big fires struck Paris during the Middle Ages?
+fires
+
+97 How often was Michael Jordan divorced?
+often
+
+98 What is the most beautiful painting?
+painting
+
+99 Give me all animal species that live in the Teutoburg Forest.
+animal
+
+100 When is the movie Worst Case Scenario going to be in cinemas in the Netherlands?
+When
+

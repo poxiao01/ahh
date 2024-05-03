@@ -1,0 +1,141 @@
+1 Who are the presidents of the United States?
+presidents
+
+2 Who has been the 5th president of the United States of America?
+president
+
+3 Give me all female German chancellors!
+chancellors
+
+4 Who was Tom Hanks married to?
+Who
+
+5 Which people were born in Heraklion?
+people
+
+6 Which actors were born in Germany?
+actors
+
+7 Which companies work in the aerospace industry as well as on nuclear reactor technology?
+companies
+
+8 Which people have as their given name Jimmy?
+people
+
+9 Who developed the video game World of Warcraft?
+Who
+
+10 Who was the wife of President Lincoln?
+wife
+
+11 Which presidents were born in 1945?
+presidents
+
+12 Which caves have more than 3 entrances?
+caves
+
+13 Which cities have more than 2 million inhabitants?
+cities
+
+14 Who owns Aldi?
+Who
+
+15 Which capitals in Europe were host cities of the summer olympic games?
+capitals
+
+16 Give me all soccer clubs in the Premier League.
+clubs
+
+17 In which programming language is GIMP written?
+language
+
+18 What languages are spoken in Estonia?
+languages
+
+19 Who is called Dana?
+Who
+
+20 Which country does the Airedale Terrier come from?
+country
+
+21 What is the highest mountain?
+mountain
+
+22 Which birds are there in the United States?
+birds
+
+23 Give me all school types.
+types
+
+24 Which organizations were founded in 1950?
+organizations
+
+25 Which genre does DBpedia belong to?
+genre
+
+26 When was DBpedia released?
+When
+
+27 Who created English Wikipedia?
+Who
+
+28 Which companies are located in California, USA?
+companies
+
+29 What is the official website of Tom Hanks?
+website
+
+30 How many films did Leonardo DiCaprio star in?
+films
+
+31 Who produced the most films?
+Who
+
+33 Which music albums contain the song Last Christmas?
+albums
+
+34 Give me all films produced by Hal Roach.
+films
+
+35 Give me all actors starring in Batman Begins.
+actors
+
+36 Give me all movies with Tom Cruise!
+movies
+
+37 List all episodes of the first season of the HBO television series The Sopranos!
+episodes
+
+38 Which books were written by Danielle Steel?
+books
+
+39 Who wrote the book The pillars of the Earth?
+Who
+
+40 Which mountains are higher than the Nanga Parbat?
+mountains
+
+41 When was Capcom founded?
+When
+
+42 Which software has been published by Mean Hamster Software?
+software
+
+44 Which software has been developed by organizations founded in California?
+software
+
+45 Which country has the most official languages?
+country
+
+46 Give me all European Capitals!
+Capitals
+
+48 Who produced films starring Natalie Portman?
+Who
+
+49 In which films did Julia Roberts as well as Richard Gere play?
+films
+
+50 Give me the websites of companies with more than 500000 employees.
+websites
+
