@@ -30,10 +30,11 @@ def read_sentences_to_list(path):
                         if not line[index].isdigit():
                             line = line[index:]
                             break
+                    line = line.strip()
                     if line in sentence_dict:
                         continue
-                    sentence_dict[line] = '1'
-                    sentences_list.append(line.strip())
+                    sentence_dict[line] = 1
+                    sentences_list.append(line)
                 elif line_num % 3 == 2:
                     question_words.append(line.strip())
             f.close()
@@ -49,38 +50,58 @@ def extract_dependency_structure(sentences_list):
     nlp = stanza.Pipeline('en', model_dir=custom_dir, download_method=None, processors='tokenize,pos,lemma,depparse',
                           use_gpu=True)
     dependency_result = []
+    words_pos_result = []
     for sentence in sentences_list:
         # 去除标点符号
+        sentence = sentence.replace(',', ' ')
         doc = nlp(sentence[:-1])
-
         # 提取依赖结构
         dependency_relations = []
+        words_pos = []
         for sent in doc.sentences:
             for word in sent.words:
                 head_word = sent.words[word.head - 1].text if word.head > 0 else word.text
                 dependency_relations.append((word.deprel, [head_word, word.text]))
+                words_pos.append((word.text, word.xpos))
+
         dependency_result.append(dependency_relations)
+        words_pos_result.append(words_pos)
 
-    return dependency_result
+    return dependency_result, words_pos_result
 
 
-def save_to_txt(sentences_list, dependency_result):
+def save_to_txt(sentences_list, dependency_result, words_pos_result):
     with open("./result/RST.txt", "w") as file:
         for index, sentence in enumerate(sentences_list):
             file.write(f"{index + 1}.{sentence}\n")
-            file.write(f"疑问词：{question_words[index]}\n")
+            file.write(f"疑问词：\n{question_words[index]}\n")
             dependency_relations = dependency_result[index]
             dep_dict = {}  # 用于收集相同类型的依赖关系
+            file.write(f'依赖结构：\n')
             for dep_type, dep_info in dependency_relations:
-                head_word, dependent_word = dep_info
-                if dep_type not in dep_dict:
-                    dep_dict[dep_type] = [f"['{head_word}','{dependent_word}']"]
-                else:
-                    dep_dict[dep_type].append(f"['{head_word}','{dependent_word}']")
-            for dep_type, dep_list in dep_dict.items():
-                if dep_type != 'compound':
-                    file.write(f"('{dep_type}': {', '.join(dep_list)})\n")
+                if dep_type == 'compound':
+                    continue
+                file.write(f"({dep_type}: {dep_info})\n")
+            file.write(f'词性：\n')
+            for words_and_pos in words_pos_result[index]:
+                file.write(f"{words_and_pos}\n")
             file.write('\n')
+
+
+def get_test_sentences(sentences_list):
+    word_dict = {}
+    test_sentences = []
+    for sentence in all_sentences_list:
+        # if sentence.find('What') != -1 or sentence.find('When') != -1 or sentence.find('Which') != -1 or sentence.find(
+        #         'Who') != -1 or sentence.find('How') != -1 or sentence.find('Where') != -1 \
+        #         or sentence.find('In which') != -1:
+        #     continue
+        temp = sentence.split()
+        if temp[0] not in word_dict:
+            word_dict[temp[0]] = '1'
+            test_sentences.append(sentence)
+            print(sentence)
+    return test_sentences
 
 
 if __name__ == "__main__":
@@ -88,15 +109,12 @@ if __name__ == "__main__":
 
     # 未去除标点符号
     all_sentences_list = read_sentences_to_list('./sentence')
-    for sentence in all_sentences_list:
-        if sentence.find('What') != -1 or sentence.find('When') != -1 or sentence.find('Which') != -1 or sentence.find('Who') != -1 or sentence.find('How') != -1 or sentence.find('Where') != -1\
-                or sentence.find('In which') != -1 or sentence.find('Give') != -1 or sentence.find('List') != -1:
-            continue
-        # if sentence[-1] == '?':
-        #     continue
-        print(sentence)
-    dependency_result = extract_dependency_structure(all_sentences_list)
-    save_to_txt(all_sentences_list, dependency_result)
+    # dependency_result, words_pos_result = extract_dependency_structure(all_sentences_list)
+    # save_to_txt(all_sentences_list, dependency_result, words_pos_result)
+
+    test_sentences = get_test_sentences(all_sentences_list)
+    dependency_result, words_pos_result = extract_dependency_structure(test_sentences)
+    save_to_txt(test_sentences, dependency_result, words_pos_result)
 
     end_time = time.time()
     print('执行时间：', end_time - start_time, 's')

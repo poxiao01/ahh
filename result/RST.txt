@@ -1,8 +1,557 @@
 1.Which companies are in the computer software industry?
-疑问词：companies
-('det': ['companies','Which'], ['industry','the'])
-('nsubj': ['industry','companies'])
-('cop': ['industry','are'])
-('case': ['industry','in'])
-('root': ['industry','industry'])
+疑问词：
+companies
+依赖结构：
+(det: ['companies', 'Which'])
+(nsubj: ['industry', 'companies'])
+(cop: ['industry', 'are'])
+(case: ['industry', 'in'])
+(det: ['industry', 'the'])
+(root: ['industry', 'industry'])
+词性：
+('Which', 'WDT')
+('companies', 'NNS')
+('are', 'VBP')
+('in', 'IN')
+('the', 'DT')
+('computer', 'NN')
+('software', 'NN')
+('industry', 'NN')
+
+2.Give me the official websites of actors of the television show Charmed.
+疑问词：
+organizations
+依赖结构：
+(root: ['Give', 'Give'])
+(iobj: ['Give', 'me'])
+(det: ['websites', 'the'])
+(amod: ['websites', 'official'])
+(obj: ['Give', 'websites'])
+(case: ['actors', 'of'])
+(nmod: ['websites', 'actors'])
+(case: ['Charmed', 'of'])
+(det: ['Charmed', 'the'])
+(nmod: ['actors', 'Charmed'])
+词性：
+('Give', 'VB')
+('me', 'PRP')
+('the', 'DT')
+('official', 'JJ')
+('websites', 'NNS')
+('of', 'IN')
+('actors', 'NNS')
+('of', 'IN')
+('the', 'DT')
+('television', 'NN')
+('show', 'NN')
+('Charmed', 'VBN')
+
+3.What are the official languages of the Philippines?
+疑问词：
+websites
+依赖结构：
+(root: ['What', 'What'])
+(cop: ['What', 'are'])
+(det: ['languages', 'the'])
+(amod: ['languages', 'official'])
+(nsubj: ['What', 'languages'])
+(case: ['Philippines', 'of'])
+(det: ['Philippines', 'the'])
+(nmod: ['languages', 'Philippines'])
+词性：
+('What', 'WP')
+('are', 'VBP')
+('the', 'DT')
+('official', 'JJ')
+('languages', 'NNS')
+('of', 'IN')
+('the', 'DT')
+('Philippines', 'NNPS')
+
+4.Who is the mayor of New York City?
+疑问词：
+capitals
+依赖结构：
+(nsubj: ['mayor', 'Who'])
+(cop: ['mayor', 'is'])
+(det: ['mayor', 'the'])
+(root: ['mayor', 'mayor'])
+(case: ['City', 'of'])
+(nmod: ['mayor', 'City'])
+词性：
+('Who', 'WP')
+('is', 'VBZ')
+('the', 'DT')
+('mayor', 'NN')
+('of', 'IN')
+('New', 'NNP')
+('York', 'NNP')
+('City', 'NNP')
+
+5.Where did Abraham Lincoln die?
+疑问词：
+languages
+依赖结构：
+(advmod: ['die', 'Where'])
+(aux: ['die', 'did'])
+(nsubj: ['die', 'Abraham'])
+(flat: ['Abraham', 'Lincoln'])
+(root: ['die', 'die'])
+词性：
+('Where', 'WRB')
+('did', 'VBD')
+('Abraham', 'NNP')
+('Lincoln', 'NNP')
+('die', 'VB')
+
+6.When was the Battle of Gettysburg?
+疑问词：
+mayor
+依赖结构：
+(root: ['When', 'When'])
+(cop: ['When', 'was'])
+(det: ['Battle', 'the'])
+(nsubj: ['When', 'Battle'])
+(case: ['Gettysburg', 'of'])
+(nmod: ['Battle', 'Gettysburg'])
+词性：
+('When', 'WRB')
+('was', 'VBD')
+('the', 'DT')
+('Battle', 'NNP')
+('of', 'IN')
+('Gettysburg', 'NNP')
+
+7.In which country is the Limerick Lake?
+疑问词：
+Where
+依赖结构：
+(case: ['country', 'In'])
+(det: ['country', 'which'])
+(obl: ['is', 'country'])
+(root: ['is', 'is'])
+(det: ['Lake', 'the'])
+(nsubj: ['is', 'Lake'])
+词性：
+('In', 'IN')
+('which', 'WDT')
+('country', 'NN')
+('is', 'VBZ')
+('the', 'DT')
+('Limerick', 'NNP')
+('Lake', 'NNP')
+
+8.How many monarchical countries are there in Europe?
+疑问词：
+When
+依赖结构：
+(advmod: ['many', 'How'])
+(amod: ['countries', 'many'])
+(amod: ['countries', 'monarchical'])
+(nsubj: ['there', 'countries'])
+(cop: ['there', 'are'])
+(root: ['there', 'there'])
+(case: ['Europe', 'in'])
+(obl: ['there', 'Europe'])
+词性：
+('How', 'WRB')
+('many', 'JJ')
+('monarchical', 'JJ')
+('countries', 'NNS')
+('are', 'VBP')
+('there', 'RB')
+('in', 'IN')
+('Europe', 'NNP')
+
+9.Through which countries does the Yenisei river flow?
+疑问词：
+countries
+依赖结构：
+(case: ['countries', 'Through'])
+(det: ['countries', 'which'])
+(nsubj: ['does', 'countries'])
+(root: ['does', 'does'])
+(det: ['flow', 'the'])
+(obj: ['does', 'flow'])
+词性：
+('Through', 'IN')
+('which', 'WDT')
+('countries', 'NNS')
+('does', 'VBZ')
+('the', 'DT')
+('Yenisei', 'NNP')
+('river', 'NN')
+('flow', 'NN')
+
+10.To which countries does the Himalayan mountain system extend?
+疑问词：
+code
+依赖结构：
+(case: ['countries', 'To'])
+(det: ['countries', 'which'])
+(nsubj: ['does', 'countries'])
+(root: ['does', 'does'])
+(det: ['system', 'the'])
+(amod: ['system', 'Himalayan'])
+(obj: ['does', 'system'])
+(xcomp: ['does', 'extend'])
+词性：
+('To', 'IN')
+('which', 'WDT')
+('countries', 'NNS')
+('does', 'VBZ')
+('the', 'DT')
+('Himalayan', 'JJ')
+('mountain', 'NN')
+('system', 'NN')
+('extend', 'VB')
+
+11.Sean Parnell is the governor of which U.S. state?
+疑问词：
+classis
+依赖结构：
+(nsubj: ['governor', 'Sean'])
+(flat: ['Sean', 'Parnell'])
+(cop: ['governor', 'is'])
+(det: ['governor', 'the'])
+(root: ['governor', 'governor'])
+(case: ['which', 'of'])
+(obl: ['state', 'which'])
+(nmod: ['governor', 'state'])
+词性：
+('Sean', 'NNP')
+('Parnell', 'NNP')
+('is', 'VBZ')
+('the', 'DT')
+('governor', 'NN')
+('of', 'IN')
+('which', 'WDT')
+('U.S.', 'NNP')
+('state', 'NN')
+
+12.List all boardgames by GMT.
+疑问词：
+country
+依赖结构：
+(root: ['List', 'List'])
+(det: ['boardgames', 'all'])
+(obj: ['List', 'boardgames'])
+(case: ['GMT', 'by'])
+(obl: ['List', 'GMT'])
+词性：
+('List', 'VB')
+('all', 'DT')
+('boardgames', 'NNS')
+('by', 'IN')
+('GMT', 'NNP')
+
+13.Show me all songs from Bruce Springsteen released between 1980 and 1990.
+疑问词：
+profession
+依赖结构：
+(root: ['Show', 'Show'])
+(iobj: ['Show', 'me'])
+(det: ['songs', 'all'])
+(obj: ['Show', 'songs'])
+(case: ['Springsteen', 'from'])
+(nmod: ['songs', 'Bruce'])
+(flat: ['Bruce', 'Springsteen'])
+(acl: ['songs', 'released'])
+(case: ['1980', 'between'])
+(obl: ['released', '1980'])
+(cc: ['1990', 'and'])
+(conj: ['1980', '1990'])
+词性：
+('Show', 'VB')
+('me', 'PRP')
+('all', 'DT')
+('songs', 'NNS')
+('from', 'IN')
+('Bruce', 'NNP')
+('Springsteen', 'NNP')
+('released', 'VBN')
+('between', 'IN')
+('1980', 'CD')
+('and', 'CC')
+('1990', 'CD')
+
+14.For which label did Elvis record his first album?
+疑问词：
+owner
+依赖结构：
+(case: ['label', 'For'])
+(det: ['label', 'which'])
+(obl: ['record', 'label'])
+(aux: ['record', 'did'])
+(nsubj: ['record', 'Elvis'])
+(root: ['record', 'record'])
+(nmod:poss: ['album', 'his'])
+(amod: ['album', 'first'])
+(obj: ['record', 'album'])
+词性：
+('For', 'IN')
+('which', 'WDT')
+('label', 'NN')
+('did', 'VBD')
+('Elvis', 'NNP')
+('record', 'VB')
+('his', 'PRP$')
+('first', 'JJ')
+('album', 'NN')
+
+15.Desserts from which country contain fish？
+疑问词：
+States
+依赖结构：
+(root: ['Desserts', 'Desserts'])
+(case: ['which', 'from'])
+(obl: ['contain', 'which'])
+(nsubj: ['contain', 'country'])
+(acl:relcl: ['Desserts', 'contain'])
+(obj: ['contain', 'fish'])
+词性：
+('Desserts', 'NNS')
+('from', 'IN')
+('which', 'WDT')
+('country', 'NN')
+('contain', 'VBP')
+('fish', 'NN')
+
+16.On which day is Columbus Day?
+疑问词：
+cities
+依赖结构：
+(case: ['day', 'On'])
+(det: ['day', 'which'])
+(root: ['day', 'day'])
+(cop: ['day', 'is'])
+(nsubj: ['day', 'Day'])
+词性：
+('On', 'IN')
+('which', 'WDT')
+('day', 'NN')
+('is', 'VBZ')
+('Columbus', 'NNP')
+('Day', 'NNP')
+
+17.Whom did Lance Bass marry?
+疑问词：
+currency
+依赖结构：
+(obj: ['marry', 'Whom'])
+(aux: ['marry', 'did'])
+(nsubj: ['marry', 'Bass'])
+(root: ['marry', 'marry'])
+词性：
+('Whom', 'WP')
+('did', 'VBD')
+('Lance', 'NNP')
+('Bass', 'NNP')
+('marry', 'VB')
+
+18.From which region is the Refosco dal Peduncolo Rosso?
+疑问词：
+countries
+依赖结构：
+(case: ['region', 'From'])
+(det: ['region', 'which'])
+(root: ['region', 'region'])
+(cop: ['region', 'is'])
+(det: ['dal', 'the'])
+(nsubj: ['region', 'dal'])
+(flat: ['dal', 'Peduncolo'])
+(flat: ['Peduncolo', 'Rosso'])
+词性：
+('From', 'IN')
+('which', 'WDT')
+('region', 'NN')
+('is', 'VBZ')
+('the', 'DT')
+('Refosco', 'NNP')
+('dal', 'NNP')
+('Peduncolo', 'NNP')
+('Rosso', 'NNP')
+
+19.Under which king did the British prime minister that signed the Munich agreement serve?
+疑问词：
+countries
+依赖结构：
+(case: ['which', 'Under'])
+(obl: ['did', 'which'])
+(nsubj: ['did', 'king'])
+(root: ['did', 'did'])
+(det: ['minister', 'the'])
+(amod: ['minister', 'British'])
+(amod: ['minister', 'prime'])
+(obj: ['did', 'minister'])
+(nsubj: ['signed', 'that'])
+(acl:relcl: ['minister', 'signed'])
+(det: ['agreement', 'the'])
+(obj: ['signed', 'agreement'])
+(xcomp: ['signed', 'serve'])
+词性：
+('Under', 'IN')
+('which', 'WDT')
+('king', 'NN')
+('did', 'VBD')
+('the', 'DT')
+('British', 'JJ')
+('prime', 'JJ')
+('minister', 'NN')
+('that', 'WDT')
+('signed', 'VBD')
+('the', 'DT')
+('Munich', 'NNP')
+('agreement', 'NN')
+('serve', 'VB')
+
+20.Of the people that died of radiation in Los Alamos, whose death was an accident?
+疑问词：
+countries
+依赖结构：
+(case: ['people', 'Of'])
+(det: ['people', 'the'])
+(root: ['people', 'people'])
+(nsubj: ['died', 'that'])
+(acl:relcl: ['people', 'died'])
+(case: ['radiation', 'of'])
+(obl: ['died', 'radiation'])
+(case: ['Alamos', 'in'])
+(nmod: ['radiation', 'Alamos'])
+(nmod:poss: ['death', 'whose'])
+(nsubj: ['accident', 'death'])
+(cop: ['accident', 'was'])
+(det: ['accident', 'an'])
+(acl:relcl: ['people', 'accident'])
+词性：
+('Of', 'IN')
+('the', 'DT')
+('people', 'NNS')
+('that', 'WDT')
+('died', 'VBD')
+('of', 'IN')
+('radiation', 'NN')
+('in', 'IN')
+('Los', 'NNP')
+('Alamos', 'NNP')
+('whose', 'WP$')
+('death', 'NN')
+('was', 'VBD')
+('an', 'DT')
+('accident', 'NN')
+
+21.Gaborone is the capital of which country member of the African Union?
+疑问词：
+presidents
+依赖结构：
+(nsubj: ['capital', 'Gaborone'])
+(cop: ['capital', 'is'])
+(det: ['capital', 'the'])
+(root: ['capital', 'capital'])
+(case: ['member', 'of'])
+(det: ['member', 'which'])
+(nmod: ['capital', 'member'])
+(case: ['Union', 'of'])
+(det: ['Union', 'the'])
+(amod: ['Union', 'African'])
+(nmod: ['member', 'Union'])
+词性：
+('Gaborone', 'NNP')
+('is', 'VBZ')
+('the', 'DT')
+('capital', 'NN')
+('of', 'IN')
+('which', 'WDT')
+('country', 'NN')
+('member', 'NN')
+('of', 'IN')
+('the', 'DT')
+('African', 'NNP')
+('Union', 'NNP')
+
+22.At which college did the only American actor that received the C  sar Award study?
+疑问词：
+mountain
+依赖结构：
+(case: ['college', 'At'])
+(det: ['college', 'which'])
+(obl: ['did', 'college'])
+(root: ['did', 'did'])
+(det: ['actor', 'the'])
+(amod: ['actor', 'only'])
+(amod: ['actor', 'American'])
+(obj: ['did', 'actor'])
+(nsubj: ['received', 'that'])
+(acl:relcl: ['actor', 'received'])
+(det: ['study', 'the'])
+(obj: ['received', 'study'])
+词性：
+('At', 'IN')
+('which', 'WDT')
+('college', 'NN')
+('did', 'VBD')
+('the', 'DT')
+('only', 'JJ')
+('American', 'JJ')
+('actor', 'NN')
+('that', 'WDT')
+('received', 'VBD')
+('the', 'DT')
+('C', 'NNP')
+('sar', 'NNP')
+('Award', 'NNP')
+('study', 'NN')
+
+23.A landmark of which city is the home of the Mona Lisa?
+疑问词：
+homepage
+依赖结构：
+(det: ['landmark', 'A'])
+(root: ['landmark', 'landmark'])
+(case: ['city', 'of'])
+(det: ['city', 'which'])
+(nsubj: ['home', 'city'])
+(cop: ['home', 'is'])
+(det: ['home', 'the'])
+(acl:relcl: ['landmark', 'home'])
+(case: ['Mona', 'of'])
+(det: ['Mona', 'the'])
+(nmod: ['home', 'Mona'])
+(flat: ['Mona', 'Lisa'])
+词性：
+('A', 'DT')
+('landmark', 'NN')
+('of', 'IN')
+('which', 'WDT')
+('city', 'NN')
+('is', 'VBZ')
+('the', 'DT')
+('home', 'NN')
+('of', 'IN')
+('the', 'DT')
+('Mona', 'NNP')
+('Lisa', 'NNP')
+
+24.Butch Otter is the governor of which U.S. state?
+疑问词：
+clubs
+依赖结构：
+(nsubj: ['governor', 'Butch'])
+(flat: ['Butch', 'Otter'])
+(cop: ['governor', 'is'])
+(det: ['governor', 'the'])
+(root: ['governor', 'governor'])
+(case: ['which', 'of'])
+(obl: ['state', 'which'])
+(nmod: ['governor', 'state'])
+词性：
+('Butch', 'NNP')
+('Otter', 'NNP')
+('is', 'VBZ')
+('the', 'DT')
+('governor', 'NN')
+('of', 'IN')
+('which', 'WDT')
+('U.S.', 'NNP')
+('state', 'NN')
 

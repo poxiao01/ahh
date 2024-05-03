@@ -1,48 +1,58 @@
 import string
-
 import stanza
 
-custom_dir = "F:\\"  # 更改为你的自定义路径
+custom_dir = "F:\\"  # Adjust this to your actual model directory
 
-
-# 加载英文模型
-
+# Load English model
 def extract_dependency_and_pos(sentences_list):
     """
-    提取并解析句子的依存关系结构以及每个词的词性。
-    :return: 每个句子的词性与依存关系结构
+    Extracts and parses sentences' dependency structures, part-of-speech, and identifies question words.
+    :return: POS, dependency structure and question word for each sentence
     """
-    # 初始化Stanza的Pipeline
+    # Initialize Stanza Pipeline
     nlp = stanza.Pipeline('en', model_dir=custom_dir, download_method=None,
                           processors='tokenize,pos,lemma,depparse', use_gpu=True)
 
-    result_with_pos_and_dependency = []
+    results = []
     for sentence in sentences_list:
-        # 去除标点符号，这里假设句子以标点结束，根据实际情况调整
+        # Process the sentence with the pipeline
         doc = nlp(sentence.rstrip(string.punctuation))
-
-        # 初始化存储该句子词性与依赖关系的数据结构
         sentence_data = {
-            'words': [],
+            'sentence': sentence,
+            'words_and_pos': [],
+            'question_word': None,
             'dependencies': []
         }
 
-        # 提取词性与依赖结构
+        # Analyze sentence components
         for sent in doc.sentences:
+            print(sent.words)
             for word in sent.words:
-                # 收集词性信息
-                pos_info = (word.text, word.xpos)
-                sentence_data['words'].append(pos_info)
+                # Append POS for each word
+                sentence_data['words_and_pos'].append((word.text, word.xpos))
 
-                # 提取依赖结构
+                # Identify question words
+                if word.deprel == 'nsubj' and word.xpos.startswith('W'):
+                    sentence_data['question_word'] = word.text
+
+                # Extract dependency structure
                 head_word = sent.words[word.head - 1].text if word.head > 0 else word.text
-                dependency_relations = (word.deprel, [head_word, word.text])
-                sentence_data['dependencies'].append(dependency_relations)
+                dependency_relation = (word.deprel, [head_word, word.text])
+                sentence_data['dependencies'].append(dependency_relation)
 
-        result_with_pos_and_dependency.append(sentence_data)
+        results.append(sentence_data)
 
-    return result_with_pos_and_dependency
+    return results
 
-
-sentence = ['Which companies are in the computer software industry?']
-print(extract_dependency_and_pos(sentence))
+# Example usage
+sentences = ['Which companies are in the computer software industry?']
+processed_sentences = extract_dependency_and_pos(sentences)
+for data in processed_sentences:
+    print(f"Sentence: {data['sentence']}")
+    print("Words and POS:")
+    for word, pos in data['words_and_pos']:
+        print(f"{word}: {pos}")
+    if data['question_word']:
+        print(f"Question Word: {data['question_word']}")
+    for dep in data['dependencies']:
+        print(f"({dep[0]}: {dep[1]})")
