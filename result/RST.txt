@@ -1,186 +1,20 @@
-1.Which companies are in the computer software industry?
+1.A companies a in the computer software industry?
 疑问词：companies, 词性：NNS
-句型词: Which, 词性: WDT
+句型词：companies, 词性：NNS
 依赖结构：
-(det: ['companies', 'Which'])
-(nsubj: ['industry', 'companies'])
-(cop: ['industry', 'are'])
+(det: ['companies', 'A'])
+(nsubj: ['a', 'companies'])
+(root: ['a', 'a'])
 (case: ['industry', 'in'])
 (det: ['industry', 'the'])
-(root: ['industry', 'industry'])
+(obl: ['a', 'industry'])
 全部单词词性：
-('Which', 'WDT', 'DET')
+('A', 'DT', 'DET')
 ('companies', 'NNS', 'NOUN')
-('are', 'VBP', 'AUX')
+('a', 'NN', 'NOUN')
 ('in', 'IN', 'ADP')
 ('the', 'DT', 'DET')
 ('computer', 'NN', 'NOUN')
 ('software', 'NN', 'NOUN')
 ('industry', 'NN', 'NOUN')
-
-2.Which telecommunications organizations are located in Belgium?
-疑问词：organizations, 词性：NNS
-句型词: Which, 词性: WDT
-依赖结构：
-(det: ['organizations', 'Which'])
-(nsubj:pass: ['located', 'organizations'])
-(aux:pass: ['located', 'are'])
-(root: ['located', 'located'])
-(case: ['Belgium', 'in'])
-(obl: ['located', 'Belgium'])
-全部单词词性：
-('Which', 'WDT', 'DET')
-('telecommunications', 'NNS', 'NOUN')
-('organizations', 'NNS', 'NOUN')
-('are', 'VBP', 'AUX')
-('located', 'VBN', 'VERB')
-('in', 'IN', 'ADP')
-('Belgium', 'NNP', 'PROPN')
-
-3.Give me the official websites of actors of the television show Charmed.
-疑问词：websites, 词性：NNS
-句型词：Give, 词性：VB
-依赖结构：
-(root: ['Give', 'Give'])
-(iobj: ['Give', 'me'])
-(det: ['websites', 'the'])
-(amod: ['websites', 'official'])
-(obj: ['Give', 'websites'])
-(case: ['actors', 'of'])
-(nmod: ['websites', 'actors'])
-(case: ['Charmed', 'of'])
-(det: ['Charmed', 'the'])
-(nmod: ['actors', 'Charmed'])
-全部单词词性：
-('Give', 'VB', 'VERB')
-('me', 'PRP', 'PRON')
-('the', 'DT', 'DET')
-('official', 'JJ', 'ADJ')
-('websites', 'NNS', 'NOUN')
-('of', 'IN', 'ADP')
-('actors', 'NNS', 'NOUN')
-('of', 'IN', 'ADP')
-('the', 'DT', 'DET')
-('television', 'NN', 'NOUN')
-('show', 'NN', 'NOUN')
-('Charmed', 'VBN', 'VERB')
-
-4.Give me the capitals of all U.S. states.
-疑问词：capitals, 词性：NNS
-句型词：Give, 词性：VB
-依赖结构：
-(root: ['Give', 'Give'])
-(iobj: ['Give', 'me'])
-(det: ['capitals', 'the'])
-(obj: ['Give', 'capitals'])
-(case: ['states', 'of'])
-(det: ['states', 'all'])
-(nmod: ['capitals', 'states'])
-全部单词词性：
-('Give', 'VB', 'VERB')
-('me', 'PRP', 'PRON')
-('the', 'DT', 'DET')
-('capitals', 'NNS', 'NOUN')
-('of', 'IN', 'ADP')
-('all', 'DT', 'DET')
-('U.S.', 'NNP', 'PROPN')
-('states', 'NNS', 'NOUN')
-
-5.What are the official languages of the Philippines?
-疑问词：languages, 词性：NNS
-句型词: What, 词性: WP
-依赖结构：
-(root: ['What', 'What'])
-(cop: ['What', 'are'])
-(det: ['languages', 'the'])
-(amod: ['languages', 'official'])
-(nsubj: ['What', 'languages'])
-(case: ['Philippines', 'of'])
-(det: ['Philippines', 'the'])
-(nmod: ['languages', 'Philippines'])
-全部单词词性：
-('What', 'WP', 'PRON')
-('are', 'VBP', 'AUX')
-('the', 'DT', 'DET')
-('official', 'JJ', 'ADJ')
-('languages', 'NNS', 'NOUN')
-('of', 'IN', 'ADP')
-('the', 'DT', 'DET')
-('Philippines', 'NNPS', 'PROPN')
-
-6.Who is the mayor of New York City?
-疑问词：mayor, 词性：NN
-句型词: Who, 词性: WP
-依赖结构：
-(nsubj: ['mayor', 'Who'])
-(cop: ['mayor', 'is'])
-(det: ['mayor', 'the'])
-(root: ['mayor', 'mayor'])
-(case: ['City', 'of'])
-(nmod: ['mayor', 'City'])
-全部单词词性：
-('Who', 'WP', 'PRON')
-('is', 'VBZ', 'AUX')
-('the', 'DT', 'DET')
-('mayor', 'NN', 'NOUN')
-('of', 'IN', 'ADP')
-('New', 'NNP', 'ADJ')
-('York', 'NNP', 'PROPN')
-('City', 'NNP', 'PROPN')
-
-7.Where did Abraham Lincoln die?
-疑问词：Where, 词性：WRB
-句型词: Where, 词性: WRB
-依赖结构：
-(advmod: ['die', 'Where'])
-(aux: ['die', 'did'])
-(nsubj: ['die', 'Abraham'])
-(flat: ['Abraham', 'Lincoln'])
-(root: ['die', 'die'])
-全部单词词性：
-('Where', 'WRB', 'ADV')
-('did', 'VBD', 'AUX')
-('Abraham', 'NNP', 'PROPN')
-('Lincoln', 'NNP', 'PROPN')
-('die', 'VB', 'VERB')
-
-8.When was the Battle of Gettysburg?
-疑问词：When, 词性：WRB
-句型词: When, 词性: WRB
-依赖结构：
-(root: ['When', 'When'])
-(cop: ['When', 'was'])
-(det: ['Battle', 'the'])
-(nsubj: ['When', 'Battle'])
-(case: ['Gettysburg', 'of'])
-(nmod: ['Battle', 'Gettysburg'])
-全部单词词性：
-('When', 'WRB', 'ADV')
-('was', 'VBD', 'AUX')
-('the', 'DT', 'DET')
-('Battle', 'NNP', 'PROPN')
-('of', 'IN', 'ADP')
-('Gettysburg', 'NNP', 'PROPN')
-
-9.Which countries have more than two official languages?
-疑问词：countries, 词性：NNS
-句型词: Which, 词性: WDT
-依赖结构：
-(det: ['countries', 'Which'])
-(nsubj: ['have', 'countries'])
-(root: ['have', 'have'])
-(advmod: ['two', 'more'])
-(fixed: ['more', 'than'])
-(nummod: ['languages', 'two'])
-(amod: ['languages', 'official'])
-(obj: ['have', 'languages'])
-全部单词词性：
-('Which', 'WDT', 'DET')
-('countries', 'NNS', 'NOUN')
-('have', 'VBP', 'VERB')
-('more', 'JJR', 'ADJ')
-('than', 'IN', 'ADP')
-('two', 'CD', 'NUM')
-('official', 'JJ', 'ADJ')
-('languages', 'NNS', 'NOUN')
 

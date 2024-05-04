@@ -54,6 +54,7 @@ def extract_dependency_structure(sentences_list):
     提取并解析句子的依存关系结构。
     :return: 句子的依存关系结构
     """
+    global question_words
     # 初始化Stanza的Pipeline
     nlp = stanza.Pipeline('en', model_dir=custom_dir, download_method=None, processors='tokenize,pos,lemma,depparse',
                           use_gpu=True)
@@ -76,7 +77,6 @@ def extract_dependency_structure(sentences_list):
                 dependency_relations.append((word.deprel, [head_word, word.text]))
                 words_pos.append((word.text, word.xpos, word.upos))
                 # print(word)
-
                 if word.text == question_words[index]:
                     question_words[index] = f'疑问词：{word.text}, 词性：{word.xpos}\n'
 
@@ -86,24 +86,27 @@ def extract_dependency_structure(sentences_list):
                 ok = False
                 for word in sent.words:
                     if word.xpos == 'FW': continue
-                    if word.xpos.find('W') != -1:
+                    if word.xpos.find('W') != -1 and word.text.lower() != 'that':
                         ok = True
-                        # if word.id > 1 and sent.words[word.id - 2].xpos == 'IN':
-                        #     words_structure = (f'句型词：{sent.words[word.id - 2].text + " " + word.text}, '
-                        #                        f'词性：{sent.words[word.id - 2].xpos + " " + word.xpos}\n')
-                        # else:
-                        #     words_structure = f'句型词：{word.text}, 词性：{word.xpos}\n'
                         words_structure = f'句型词：{word.text}, 词性：{word.xpos}\n'
                         break
 
                 if not ok:
                     for word in sent.words:
-                        if word.xpos.find('V') != '-1':
+                        if word.xpos.find('V') != -1:
+                            words_structure = f'b句型词：{word.text}, 词性：{word.xpos}\n'
+                            ok = True
+                            break
+
+                if not ok:
+                    for word in sent.words:
+                        if word.text.islower():
                             words_structure = f'句型词：{word.text}, 词性：{word.xpos}\n'
                             ok = True
                             break
+
                 if not ok:
-                    words_structure = f'句型词：Null, 词性：Null'
+                    words_structure = f'句型词：Null, 词性：Null\n'
         dependency_result.append(dependency_relations)
         words_pos_result.append(words_pos)
         words_structure_result.append(words_structure)
@@ -113,8 +116,21 @@ def extract_dependency_structure(sentences_list):
 
 
 def save_to_txt(sentences_list, dependency_result, words_pos_result, words_structure_result):
+    global question_words
+    temp_dict = {}
     with open("./result/RST.txt", "w") as file:
         for index, sentence in enumerate(sentences_list):
+
+            # # ----------------------------------
+            # begin_position = words_structure_result[index].find('：')  # 找到第一个':'的位置
+            # end_position = words_structure_result[index].find(',')  # 找到第一个','的位置
+            # temp = words_structure_result[index][begin_position + 1: end_position]  # 从冒号之后的字符开始取到字符串结束
+            # temp = temp.strip()
+            # if temp in temp_dict:   continue
+            # temp_dict[temp] = 1
+            # # ----------------------------------
+            # print(temp)
+
             file.write(f"{index + 1}.{sentence}\n")
             file.write(question_words[index])
             file.write(words_structure_result[index])
@@ -152,11 +168,12 @@ if __name__ == "__main__":
     start_time = time.time()
     # 未去除标点符号
     all_sentences_list = read_sentences_to_list('./sentence')
+    # all_sentences_list = get_test_sentences(all_sentences_list)
     dependency_result, words_pos_result, words_structure_result = extract_dependency_structure(all_sentences_list)
 
-    for index in range(len(dependency_result)):
-        dependencyResolver = DependencyResolver(question_words[index], words_structure_result[index], dependency_result[index])
+    # for index in range(len(dependency_result)):
+    #     dependencyResolver = DependencyResolver(question_words[index], words_structure_result[index], dependency_result[index])
 
-    # save_to_txt(all_sentences_list, dependency_result, words_pos_result, words_structure_result)
+    save_to_txt(all_sentences_list, dependency_result, words_pos_result, words_structure_result)
     end_time = time.time()
     print('执行时间：', end_time - start_time, 's')
