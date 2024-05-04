@@ -3,6 +3,8 @@ import time
 
 import stanza
 
+from DependencyResolver import DependencyResolver
+
 custom_dir = "F:\\"  # 更改为你的自定义路径
 # stanza.download('en', model_dir=custom_dir)
 
@@ -79,18 +81,19 @@ def extract_dependency_structure(sentences_list):
                     question_words[index] = f'疑问词：{word.text}, 词性：{word.xpos}\n'
 
             if sent.words[0].xpos.find('W') != -1 and sent.words[0].xpos != 'FW':
-                words_structure = f'句型词: {sent.words[0].text}, 词性: {sent.words[0].xpos}\n'
+                words_structure = f'句型词： {sent.words[0].text}, 词性: {sent.words[0].xpos}\n'
             else:
                 ok = False
                 for word in sent.words:
                     if word.xpos == 'FW': continue
                     if word.xpos.find('W') != -1:
                         ok = True
-                        if word.id > 1 and sent.words[word.id - 2].xpos == 'IN':
-                            words_structure = (f'句型词：{sent.words[word.id - 2].text + " " + word.text}, '
-                                               f'词性：{sent.words[word.id - 2].xpos + " " + word.xpos}\n')
-                        else:
-                            words_structure = f'句型词：{word.text}, 词性：{word.xpos}\n'
+                        # if word.id > 1 and sent.words[word.id - 2].xpos == 'IN':
+                        #     words_structure = (f'句型词：{sent.words[word.id - 2].text + " " + word.text}, '
+                        #                        f'词性：{sent.words[word.id - 2].xpos + " " + word.xpos}\n')
+                        # else:
+                        #     words_structure = f'句型词：{word.text}, 词性：{word.xpos}\n'
+                        words_structure = f'句型词：{word.text}, 词性：{word.xpos}\n'
                         break
 
                 if not ok:
@@ -150,6 +153,10 @@ if __name__ == "__main__":
     # 未去除标点符号
     all_sentences_list = read_sentences_to_list('./sentence')
     dependency_result, words_pos_result, words_structure_result = extract_dependency_structure(all_sentences_list)
-    save_to_txt(all_sentences_list, dependency_result, words_pos_result, words_structure_result)
+
+    for index in range(len(dependency_result)):
+        dependencyResolver = DependencyResolver(question_words[index], words_structure_result[index], dependency_result[index])
+
+    # save_to_txt(all_sentences_list, dependency_result, words_pos_result, words_structure_result)
     end_time = time.time()
     print('执行时间：', end_time - start_time, 's')
