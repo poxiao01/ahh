@@ -7,8 +7,7 @@ class DependencyResolver:
         self.used_word = dict()
         self.dependency_paths_list = []
         self.make_directed_graph(dependency_relations)
-        self.get_dependency_paths(self.structure_word, self.question_word)
-        self.output()
+        # self.output()
 
     def custom_format(self, s):
         begin_position = s.find('：')  # 找到第一个':'的位置
@@ -29,23 +28,26 @@ class DependencyResolver:
                 self.edge_dict[word].append((head_word, ration))
 
     def output(self):
-        if len(self.dependency_paths_list) == 0 and self.question_word != self.structure_word:
-            print('\n--------------------------------begin---------------------------------------\n')
-            print("Question: " + self.question_word)
-            print("Structure: " + self.structure_word)
-            # print("Dependencies:" + str(self.dependency_relations))
-            for word, relation in self.edge_dict.items():
-                print(word, relation)
-
-            print('依赖路径：')
-            for path in self.dependency_paths_list:
-                print(path)
-
-            print('\n--------------------------------end---------------------------------------\n\n')
+        pass
+        # if len(self.dependency_paths_list) == 0 and self.question_word != self.structure_word:
+        #     print('\n--------------------------------begin---------------------------------------\n')
+        #     print("Question: " + self.question_word)
+        #     print("Structure: " + self.structure_word)
+        #     # print("Dependencies:" + str(self.dependency_relations))
+        #     for word, relation in self.edge_dict.items():
+        #         print(word, relation)
+        #
+        #     print('依赖路径：')
+        #     for path in self.dependency_paths_list:
+        #         print(path)
+        #
+        #     print('\n--------------------------------end---------------------------------------\n\n')
 
     def find_dependency_paths(self, word, target_word, path):
         if word == target_word:
             self.dependency_paths_list.append(path)
+            return
+        if word not in self.edge_dict:
             return
         for word_and_relation in self.edge_dict[word]:
             next_word, next_relation = word_and_relation[0], word_and_relation[1]
@@ -55,7 +57,8 @@ class DependencyResolver:
             self.find_dependency_paths(next_word, target_word, path + dependency_structure)
             self.used_word[next_word] = False
 
-    def get_dependency_paths(self, word, target_word):
+    def get_dependency_paths(self):
+        word, target_word = self.question_word, self.structure_word
         self.used_word[word] = True
         self.find_dependency_paths(word, target_word, '')
         self.used_word[word] = False
@@ -64,3 +67,5 @@ class DependencyResolver:
         self.used_word[word] = True
         self.find_dependency_paths(word, target_word, '')
         self.used_word[word] = False
+
+        return self.dependency_paths_list

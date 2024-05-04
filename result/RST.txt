@@ -1,20 +1,331 @@
-1.A companies a in the computer software industry?
-疑问词：companies, 词性：NNS
-句型词：companies, 词性：NNS
+1.Which state of the United States of America has the highest density?
+疑问词：States, 词性：NNPS
+句型词： Which, 词性: WDT
+依赖路径：[]
 依赖结构：
-(det: ['companies', 'A'])
-(nsubj: ['a', 'companies'])
-(root: ['a', 'a'])
-(case: ['industry', 'in'])
-(det: ['industry', 'the'])
-(obl: ['a', 'industry'])
-全部单词词性：
-('A', 'DT', 'DET')
-('companies', 'NNS', 'NOUN')
-('a', 'NN', 'NOUN')
-('in', 'IN', 'ADP')
-('the', 'DT', 'DET')
-('computer', 'NN', 'NOUN')
-('software', 'NN', 'NOUN')
-('industry', 'NN', 'NOUN')
+(det: ['state', 'Which'])
+(nsubj: ['has', 'state'])
+(case: ['States', 'of'])
+(det: ['States', 'the'])
+(amod: ['States', 'United'])
+(nmod: ['state', 'States'])
+(case: ['America', 'of'])
+(nmod: ['States', 'America'])
+(root: ['has', 'has'])
+(det: ['density', 'the'])
+(amod: ['density', 'highest'])
+(obj: ['has', 'density'])
+
+2.Which television shows were created by Walt Disney?
+疑问词：television, 词性：NN
+句型词： Which, 词性: WDT
+依赖路径：[]
+依赖结构：
+(det: ['shows', 'Which'])
+(compound: ['shows', 'television'])
+(nsubj:pass: ['created', 'shows'])
+(aux:pass: ['created', 'were'])
+(root: ['created', 'created'])
+(case: ['Walt', 'by'])
+(obl:agent: ['created', 'Walt'])
+(flat: ['Walt', 'Disney'])
+
+3.In which military conflicts did Lawrence of Arabia participate?
+疑问词：conflicts, 词性：NNS
+句型词：which, 词性：WDT
+依赖路径：[]
+依赖结构：
+(case: ['which', 'In'])
+(obl: ['did', 'which'])
+(amod: ['conflicts', 'military'])
+(nsubj: ['did', 'conflicts'])
+(advcl: ['participate', 'did'])
+(nsubj: ['participate', 'Lawrence'])
+(case: ['Arabia', 'of'])
+(nmod: ['Lawrence', 'Arabia'])
+(root: ['participate', 'participate'])
+
+4.In which UK city are the headquarters of the MI6?
+疑问词：city, 词性：NN
+句型词：which, 词性：WDT
+依赖路径：[]
+依赖结构：
+(case: ['headquarters', 'In'])
+(det: ['headquarters', 'which'])
+(compound: ['city', 'UK'])
+(nsubj: ['headquarters', 'city'])
+(cop: ['headquarters', 'are'])
+(det: ['headquarters', 'the'])
+(root: ['headquarters', 'headquarters'])
+(case: ['MI6', 'of'])
+(det: ['MI6', 'the'])
+(nmod: ['headquarters', 'MI6'])
+
+5.In which U.S. state is Area 51 located?
+疑问词：state, 词性：NN
+句型词：which, 词性：WDT
+依赖路径：[]
+依赖结构：
+(case: ['which', 'In'])
+(det: ['Area', 'which'])
+(compound: ['state', 'U.S.'])
+(nsubj: ['Area', 'state'])
+(cop: ['Area', 'is'])
+(root: ['Area', 'Area'])
+(nummod: ['Area', '51'])
+(acl: ['Area', 'located'])
+
+6.Give me all B-sides of the Ramones.
+B-sidesb句型词：Give, 词性：VB
+依赖路径：[]
+依赖结构：
+(root: ['Give', 'Give'])
+(iobj: ['Give', 'me'])
+(det: ['sides', 'all'])
+(compound: ['sides', 'B'])
+(punct: ['sides', '-'])
+(obj: ['Give', 'sides'])
+(case: ['Ramones', 'of'])
+(det: ['Ramones', 'the'])
+(nmod: ['sides', 'Ramones'])
+
+7.To which artistic movement did the painter of The Three Dancers belong?
+疑问词：movement, 词性：NN
+句型词：which, 词性：WDT
+依赖路径：[]
+依赖结构：
+(case: ['which', 'To'])
+(obl: ['did', 'which'])
+(amod: ['movement', 'artistic'])
+(nsubj: ['did', 'movement'])
+(advcl: ['belong', 'did'])
+(det: ['painter', 'the'])
+(nsubj: ['belong', 'painter'])
+(case: ['Dancers', 'of'])
+(det: ['Dancers', 'The'])
+(amod: ['Dancers', 'Three'])
+(nmod: ['painter', 'Dancers'])
+(root: ['belong', 'belong'])
+
+8.Which types of grapes grow in Oregon?
+疑问词：grapes, 词性：NNS
+句型词： Which, 词性: WDT
+依赖路径：[]
+依赖结构：
+(det: ['types', 'Which'])
+(nsubj: ['grow', 'types'])
+(case: ['grapes', 'of'])
+(nmod: ['types', 'grapes'])
+(root: ['grow', 'grow'])
+(case: ['Oregon', 'in'])
+(obl: ['grow', 'Oregon'])
+
+9.esserts from which country contain fish?
+疑问词：country, 词性：NN
+句型词：which, 词性：WDT
+依赖路径：[]
+依赖结构：
+(root: ['esserts', 'esserts'])
+(mark: ['contain', 'from'])
+(obl: ['contain', 'which'])
+(nsubj: ['contain', 'country'])
+(acl: ['esserts', 'contain'])
+(obj: ['contain', 'fish'])
+
+10.Where did the architect of the Eiffel Tower study?
+疑问词：architect, 词性：NN
+句型词： Where, 词性: WRB
+依赖路径：[]
+依赖结构：
+(advmod: ['did', 'Where'])
+(root: ['did', 'did'])
+(det: ['architect', 'the'])
+(nsubj: ['did', 'architect'])
+(case: ['study', 'of'])
+(det: ['study', 'the'])
+(compound: ['Tower', 'Eiffel'])
+(compound: ['study', 'Tower'])
+(nmod: ['architect', 'study'])
+
+11.In which city were the parents of Che Guevara born?
+疑问词：parents, 词性：NNS
+句型词：which, 词性：WDT
+依赖路径：[]
+依赖结构：
+(case: ['city', 'In'])
+(det: ['city', 'which'])
+(obl: ['were', 'city'])
+(root: ['were', 'were'])
+(det: ['parents', 'the'])
+(nsubj: ['were', 'parents'])
+(case: ['Guevara', 'of'])
+(nmod: ['parents', 'Che'])
+(flat: ['Che', 'Guevara'])
+(acl: ['parents', 'born'])
+
+12.How many ethnic groups live in Slovenia?
+疑问词：ethnic, 词性：JJ
+句型词： How, 词性: WRB
+依赖路径：[]
+依赖结构：
+(advmod: ['many', 'How'])
+(amod: ['groups', 'many'])
+(amod: ['groups', 'ethnic'])
+(nsubj: ['live', 'groups'])
+(root: ['live', 'live'])
+(case: ['Slovenia', 'in'])
+(obl: ['live', 'Slovenia'])
+
+13.What is in a chocolate chip cookie?
+疑问词：cookie, 词性：NN
+句型词： What, 词性: WP
+依赖路径：[]
+依赖结构：
+(nsubj: ['is', 'What'])
+(root: ['is', 'is'])
+(case: ['cookie', 'in'])
+(det: ['cookie', 'a'])
+(compound: ['chip', 'chocolate'])
+(compound: ['cookie', 'chip'])
+(obl: ['is', 'cookie'])
+
+14.What do ants eat?
+疑问词：ants, 词性：NNS
+句型词： What, 词性: WP
+依赖路径：[]
+依赖结构：
+(obj: ['eat', 'What'])
+(aux: ['eat', 'do'])
+(nsubj: ['eat', 'ants'])
+(root: ['eat', 'eat'])
+
+15.Show me hiking trails in the Grand Canyon where there's no danger of flash floods.
+疑问词：trails, 词性：NNS
+句型词：where, 词性：WRB
+依赖路径：[]
+依赖结构：
+(root: ['Show', 'Show'])
+(iobj: ['Show', 'me'])
+(compound: ['trails', 'hiking'])
+(obj: ['Show', 'trails'])
+(case: ['Canyon', 'in'])
+(det: ['Canyon', 'the'])
+(amod: ['Canyon', 'Grand'])
+(nmod: ['trails', 'Canyon'])
+(advmod: ["'s", 'where'])
+(expl: ["'s", 'there'])
+(advcl: ['Show', "'s"])
+(det: ['danger', 'no'])
+(nsubj: ["'s", 'danger'])
+(case: ['floods', 'of'])
+(compound: ['floods', 'flash'])
+(nmod: ['danger', 'floods'])
+
+16.How short is the shortest active NBA player?
+疑问词：player, 词性：NN
+句型词： How, 词性: WRB
+依赖路径：[]
+依赖结构：
+(advmod: ['short', 'How'])
+(root: ['short', 'short'])
+(cop: ['short', 'is'])
+(det: ['player', 'the'])
+(amod: ['player', 'shortest'])
+(amod: ['player', 'active'])
+(compound: ['player', 'NBA'])
+(nsubj: ['short', 'player'])
+
+17.What kind of music did Lou Reed play?
+疑问词：music, 词性：NN
+句型词： What, 词性: WDT
+依赖路径：[]
+依赖结构：
+(det: ['kind', 'What'])
+(obj: ['play', 'kind'])
+(case: ['music', 'of'])
+(nmod: ['kind', 'music'])
+(aux: ['play', 'did'])
+(nsubj: ['play', 'Lou'])
+(flat: ['Lou', 'Reed'])
+(root: ['play', 'play'])
+
+18.Who became president after JFK died?
+疑问词：president, 词性：NN
+句型词： Who, 词性: WP
+依赖路径：[]
+依赖结构：
+(nsubj: ['became', 'Who'])
+(root: ['became', 'became'])
+(xcomp: ['became', 'president'])
+(mark: ['died', 'after'])
+(nsubj: ['died', 'JFK'])
+(advcl: ['became', 'died'])
+
+19.Which states border Illinois?
+疑问词：states, 词性：NNS
+句型词： Which, 词性: WDT
+依赖路径：[]
+依赖结构：
+(det: ['border', 'Which'])
+(compound: ['border', 'states'])
+(compound: ['Illinois', 'border'])
+(root: ['Illinois', 'Illinois'])
+
+20.Which television shows were created by John Cleese?
+疑问词：television, 词性：NN
+句型词： Which, 词性: WDT
+依赖路径：[]
+依赖结构：
+(det: ['shows', 'Which'])
+(compound: ['shows', 'television'])
+(nsubj:pass: ['created', 'shows'])
+(aux:pass: ['created', 'were'])
+(root: ['created', 'created'])
+(case: ['John', 'by'])
+(obl:agent: ['created', 'John'])
+(flat: ['John', 'Cleese'])
+
+21.Who was called Frank The Tank?
+疑问词：Tank, 词性：NNP
+句型词： Who, 词性: WP
+依赖路径：[]
+依赖结构：
+(nsubj:pass: ['called', 'Who'])
+(aux:pass: ['called', 'was'])
+(root: ['called', 'called'])
+(compound: ['Tank', 'Frank'])
+(compound: ['Tank', 'The'])
+(xcomp: ['called', 'Tank'])
+
+22.Under which king did the British prime minister that signed the Munich agreement serve?
+疑问词：king, 词性：NN
+句型词：which, 词性：WDT
+依赖路径：[]
+依赖结构：
+(case: ['which', 'Under'])
+(obl: ['did', 'which'])
+(nsubj: ['did', 'king'])
+(root: ['did', 'did'])
+(det: ['minister', 'the'])
+(amod: ['minister', 'British'])
+(amod: ['minister', 'prime'])
+(obj: ['did', 'minister'])
+(nsubj: ['signed', 'that'])
+(acl:relcl: ['minister', 'signed'])
+(det: ['agreement', 'the'])
+(compound: ['agreement', 'Munich'])
+(obj: ['signed', 'agreement'])
+(xcomp: ['signed', 'serve'])
+
+23.Desserts from which country contain fish?
+疑问词：country, 词性：NN
+句型词：which, 词性：WDT
+依赖路径：[]
+依赖结构：
+(root: ['Desserts', 'Desserts'])
+(case: ['which', 'from'])
+(obl: ['contain', 'which'])
+(nsubj: ['contain', 'country'])
+(acl:relcl: ['Desserts', 'contain'])
+(obj: ['contain', 'fish'])
 

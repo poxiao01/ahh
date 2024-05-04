@@ -67,6 +67,7 @@ def extract_dependency_structure(sentences_list):
         # 去除标点符号
         sentence = sentence.replace(',', ' ')
         doc = nlp(sentence[:-1])
+
         # 提取依赖结构
         dependency_relations = []
         words_pos = []
@@ -115,12 +116,14 @@ def extract_dependency_structure(sentences_list):
     return dependency_result, words_pos_result, words_structure_result
 
 
-def save_to_txt(sentences_list, dependency_result, words_pos_result, words_structure_result):
+def save_to_txt(sentences_list, dependency_result, words_pos_result, words_structure_result, dependency_paths_result):
     global question_words
     temp_dict = {}
+    number = 0
     with open("./result/RST.txt", "w") as file:
         for index, sentence in enumerate(sentences_list):
-
+            if len(dependency_paths_result[index]) != 0:
+                continue
             # # ----------------------------------
             # begin_position = words_structure_result[index].find('：')  # 找到第一个':'的位置
             # end_position = words_structure_result[index].find(',')  # 找到第一个','的位置
@@ -130,19 +133,19 @@ def save_to_txt(sentences_list, dependency_result, words_pos_result, words_struc
             # temp_dict[temp] = 1
             # # ----------------------------------
             # print(temp)
-
-            file.write(f"{index + 1}.{sentence}\n")
+            number += 1
+            file.write(f"{number}.{sentence}\n")
             file.write(question_words[index])
             file.write(words_structure_result[index])
-            dependency_relations = dependency_result[index]
+            file.write(f'依赖路径：{dependency_paths_result[index]}\n')
             file.write(f'依赖结构：\n')
-            for dep_type, dep_info in dependency_relations:
-                if dep_type == 'compound':
-                    continue
+            for dep_type, dep_info in dependency_result[index]:
+                # if dep_type == 'compound':
+                #     continue
                 file.write(f"({dep_type}: {dep_info})\n")
-            file.write(f'全部单词词性：\n')
-            for words_and_pos in words_pos_result[index]:
-                file.write(f"{words_and_pos}\n")
+            # file.write(f'全部单词词性：\n')
+            # for words_and_pos in words_pos_result[index]:
+            #     file.write(f"{words_and_pos}\n")
             file.write('\n')
 
 
@@ -170,10 +173,11 @@ if __name__ == "__main__":
     all_sentences_list = read_sentences_to_list('./sentence')
     # all_sentences_list = get_test_sentences(all_sentences_list)
     dependency_result, words_pos_result, words_structure_result = extract_dependency_structure(all_sentences_list)
-
-    # for index in range(len(dependency_result)):
-    #     dependencyResolver = DependencyResolver(question_words[index], words_structure_result[index], dependency_result[index])
-
-    save_to_txt(all_sentences_list, dependency_result, words_pos_result, words_structure_result)
+    dependency_paths_result = []
+    for index in range(len(dependency_result)):
+        dependencyResolver = DependencyResolver(question_words[index], words_structure_result[index], dependency_result[index])
+        dependency_paths_result.append(dependencyResolver.get_dependency_paths())
+    # print(type(dependency_paths_result[0]))
+    save_to_txt(all_sentences_list, dependency_result, words_pos_result, words_structure_result, dependency_paths_result)
     end_time = time.time()
     print('执行时间：', end_time - start_time, 's')
