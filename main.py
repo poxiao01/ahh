@@ -122,8 +122,8 @@ def save_to_txt(sentences_list, dependency_result, words_pos_result, words_struc
     number = 0
     with open("./result/RST.txt", "w") as file:
         for index, sentence in enumerate(sentences_list):
-            if len(dependency_paths_result[index]) != 0:
-                continue
+            # if len(dependency_paths_result[index]) != 0:
+            #     continue
             # # ----------------------------------
             # begin_position = words_structure_result[index].find('：')  # 找到第一个':'的位置
             # end_position = words_structure_result[index].find(',')  # 找到第一个','的位置

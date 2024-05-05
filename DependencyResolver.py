@@ -23,9 +23,16 @@ class DependencyResolver:
             head_word, word = words[0], words[1]
             # print(ration, head_word, word)
             if word not in self.edge_dict:
-                self.edge_dict[word] = [(head_word, ration)]
+                self.edge_dict[word] = [(head_word, ration, '-->')]
             else:
-                self.edge_dict[word].append((head_word, ration))
+                self.edge_dict[word].append((head_word, ration, '-->'))
+
+            head_word, word = word, head_word
+            if word not in self.edge_dict:
+                self.edge_dict[word] = [(head_word, ration, '<--')]
+            else:
+                self.edge_dict[word].append((head_word, ration, '<--'))
+
 
     def output(self):
         pass
@@ -50,9 +57,9 @@ class DependencyResolver:
         if word not in self.edge_dict:
             return
         for word_and_relation in self.edge_dict[word]:
-            next_word, next_relation = word_and_relation[0], word_and_relation[1]
+            next_word, next_relation, direction = word_and_relation[0], word_and_relation[1], word_and_relation[2]
             if next_word in self.used_word and self.used_word[next_word] == True: continue
-            dependency_structure = f'[{next_relation}：{next_word},{word}] '
+            dependency_structure = f'[{next_relation}：{next_word},{word}]{direction}'
             self.used_word[next_word] = True
             self.find_dependency_paths(next_word, target_word, path + dependency_structure)
             self.used_word[next_word] = False
