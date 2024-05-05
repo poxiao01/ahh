@@ -1,10 +1,16 @@
+import copy
+
+
 class DependencyResolver:
-    def __init__(self, question_word, structure_word, dependency_relations):
+    def __init__(self, question_word, structure_word, dependency_relations, sentence):
         self.question_word = self.custom_format(question_word).strip()
         self.structure_word = self.custom_format(structure_word).strip()
         self.dependency_relations = dependency_relations
+        self.sentence = sentence
+
         self.edge_dict = dict()
         self.used_word = dict()
+        self.father = dict()
         self.dependency_paths_list = []
         self.make_directed_graph(dependency_relations)
         # self.output()
@@ -21,18 +27,20 @@ class DependencyResolver:
     def make_directed_graph(self, dependency_relations):
         for ration, words in dependency_relations:
             head_word, word = words[0], words[1]
+            if word not in self.father:
+                self.father[word] = []
+            self.father[word].append(head_word)
             # print(ration, head_word, word)
-            if word not in self.edge_dict:
-                self.edge_dict[word] = [(head_word, ration, '-->')]
+            if head_word not in self.edge_dict:
+                self.edge_dict[head_word] = [(word, ration)]
             else:
-                self.edge_dict[word].append((head_word, ration, '-->'))
+                self.edge_dict[head_word].append((word, ration))
 
-            head_word, word = word, head_word
-            if word not in self.edge_dict:
-                self.edge_dict[word] = [(head_word, ration, '<--')]
-            else:
-                self.edge_dict[word].append((head_word, ration, '<--'))
-
+            # head_word, word = word, head_word
+            # if word not in self.edge_dict:
+            #     self.edge_dict[word] = [(head_word, ration, '<--')]
+            # else:
+            #     self.edge_dict[word].append((head_word, ration, '<--'))
 
     def output(self):
         pass
@@ -57,22 +65,72 @@ class DependencyResolver:
         if word not in self.edge_dict:
             return
         for word_and_relation in self.edge_dict[word]:
-            next_word, next_relation, direction = word_and_relation[0], word_and_relation[1], word_and_relation[2]
-            if next_word in self.used_word and self.used_word[next_word] == True: continue
-            dependency_structure = f'[{next_relation}：{next_word},{word}]{direction}'
+            next_word, next_relation = word_and_relation[0], word_and_relation[1]
+            if next_word in self.used_word and self.used_word[next_word] == True:
+                continue
+            dependency_structure = [f'[{next_relation}：{word},{next_word}]']
             self.used_word[next_word] = True
             self.find_dependency_paths(next_word, target_word, path + dependency_structure)
             self.used_word[next_word] = False
 
     def get_dependency_paths(self):
         word, target_word = self.question_word, self.structure_word
+        if word == target_word:
+            return (1, '')
+        for ration, words in self.dependency_relations:
+            if words[0] == word and words[1] == target_word or words[0] == target_word and words[1] == word:
+                return (1, '')
+
         self.used_word[word] = True
-        self.find_dependency_paths(word, target_word, '')
+        self.find_dependency_paths(word, target_word, [])
         self.used_word[word] = False
 
-        word,target_word = target_word, word
+        word, target_word = target_word, word
         self.used_word[word] = True
-        self.find_dependency_paths(word, target_word, '')
+        self.find_dependency_paths(word, target_word, [])
         self.used_word[word] = False
 
-        return self.dependency_paths_list
+        for index, dependency_structure in enumerate(self.dependency_paths_list):
+            if len(dependency_structure) > 0:
+                self.dependency_paths_list[index] = '-->'.join(self.dependency_paths_list[index])
+
+        if len(self.dependency_paths_list) == 0:
+            v = set()
+            used_v = set()
+            v.add(word)
+            used_v.add(word)
+            flag = True
+            # print('----------------------begin-----------------------------\n')
+            while len(v) > 0 and flag:
+                temp_v = set()
+                for v_word in v:
+                    for father_word in self.father[v_word]:
+                        if father_word not in used_v:
+                            temp_v.add(father_word)
+                            used_v.add(father_word)
+
+                v = temp_v
+                for v_word in v:
+                    self.used_word[v_word] = True
+                    self.find_dependency_paths(v_word, word, [])
+                    self.used_word[v_word] = False
+                    if len(self.dependency_paths_list) == 0:
+                        self.dependency_paths_list.clear()
+                        continue
+
+                    self.used_word[v_word] = True
+                    self.find_dependency_paths(v_word, target_word, [])
+                    self.used_word[v_word] = False
+                    if len(self.dependency_paths_list) <= 1:
+                        self.dependency_paths_list.clear()
+                        continue
+                    self.dependency_paths_list[0] = self.dependency_paths_list[0][::-1]
+                    self.dependency_paths_list[0] = '<--'.join(self.dependency_paths_list[0])
+                    self.dependency_paths_list[1] = '-->'.join(self.dependency_paths_list[1])
+                    self.dependency_paths_list[0] = self.dependency_paths_list[0] + '--' + self.dependency_paths_list[1]
+                    self.dependency_paths_list.pop()
+                    flag = False
+                    break
+
+            # print('----------------------end-----------------------------\n')
+        return (0, self.dependency_paths_list)
