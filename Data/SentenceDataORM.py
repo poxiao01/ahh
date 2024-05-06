@@ -1,149 +1,195 @@
-from sqlalchemy import Column, Integer, String
-from sqlalchemy.ext.declarative import declarative_base
+import json
 
+from sqlalchemy import Column, Integer, String, Boolean, create_engine
+from sqlalchemy.orm import declarative_base
 Base = declarative_base()
-
 
 class SentenceDataORM(Base):
     __tablename__ = 'SENTENCES_DATA'
 
-    # 主键ID，自动递增
-    ID = Column(Integer, primary_key=True, autoincrement=True)
-
-    # 句子内容
+    ID = Column(Integer, primary_key=True)
     SENTENCE = Column(String(128))
-
-    # 相同依存关系计数
-    SAME_DEPENDENCY = Column(Integer)
-
-    # 依存路径
+    SAME_DEPENDENCY = Column(Boolean)
     DEPENDENCY_PATH = Column(String(128))
-
-    # 短语类型
-    PHRASE_TYPE = Column(String(32))
-
-    # 短语词汇
-    PHRASE_WORD = Column(String(32))
-
-    # 短语词汇词性
-    PHRASE_WORD_POS = Column(String(32))
-
-    # 问题词汇
-    QUESTION_WORD = Column(String(32))
-
-    # 问题词汇词性
+    SENTENCE_PATTERN = Column(String(32))
+    SENTENCE_STRUCTURE_WORD = Column(String(32))
+    SENTENCE_STRUCTURE_WORD_POS = Column(String(32))
     QUESTION_WORD_POS = Column(String(32))
+    NUMMOD = Column(Boolean)
+    OBL_TMOD = Column(Boolean)
+    ADVCL = Column(Boolean)
+    OBL_AGENT = Column(Boolean)
+    CONJ = Column(Boolean)
+    OBL = Column(Boolean)
+    CC = Column(Boolean)
+    OBL_NPMOD = Column(Boolean)
+    CC_PRECONJ = Column(Boolean)
+    COP = Column(Boolean)
+    NMOD_POSSESS = Column(Boolean)
+    PUNCT = Column(Boolean)
+    XCOMP = Column(Boolean)
+    EXPL = Column(Boolean)
+    AUX = Column(Boolean)
+    OBJ = Column(Boolean)
+    ACL = Column(Boolean)
+    CCOMP = Column(Boolean)
+    ACL_RELCL = Column(Boolean)
+    DEP = Column(Boolean)
+    APPOS = Column(Boolean)
+    NSUBJ_PASS = Column(Boolean)
+    FLAT = Column(Boolean)
+    CASE = Column(Boolean)
+    AMOD = Column(Boolean)
+    ROOT = Column(Boolean)
+    NMOD_NPMOD = Column(Boolean)
+    AUX_PASS = Column(Boolean)
+    MARK = Column(Boolean)
+    ADVCL_RELCL = Column(Boolean)
+    ADVMOD = Column(Boolean)
+    NMOD = Column(Boolean)
+    IOBJ = Column(Boolean)
+    DET_PREDET = Column(Boolean)
+    FIXED = Column(Boolean)
+    DET = Column(Boolean)
+    COMPOUND = Column(Boolean)
+    NSUBJ = Column(Boolean)
 
-    # 数量修饰词
-    NUMMOD = Column(Integer)
+    def create_sentence_data_from_list(self, temp_list):
+        """
+        根据temp_list中的数据创建SentenceDataORM实例。
+        假设temp_list的元素顺序与SentenceDataORM的字段顺序一致。
+        """
+        field_names = [
+            'SENTENCE',  # 句子
+            'SAME_DEPENDENCY',  # 是否同依赖
+            'DEPENDENCY_PATH',  # 依赖路径
+            'SENTENCE_PATTERN',  # 句子类型(疑问句 or 陈述句)
+            'SENTENCE_STRUCTURE_WORD',  # 句型词（此字段之前遗漏，现已加入）
+            'SENTENCE_STRUCTURE_WORD_POS',  # 句型词词性
+            'QUESTION_WORD_POS',  # 疑问词词性
+            'NUMMOD', 'OBL_TMOD', 'ADVCL', 'OBL_AGENT', 'CONJ', 'OBL', 'CC',
+            'OBL_NPMOD', 'CC_PRECONJ', 'COP', 'NMOD_POSSESS', 'PUNCT', 'XCOMP',
+            'EXPL', 'AUX', 'OBJ', 'ACL', 'CCOMP', 'ACL_RELCL', 'DEP', 'APPOS',
+            'NSUBJ_PASS', 'FLAT', 'CASE', 'AMOD', 'ROOT', 'NMOD_NPMOD', 'AUX_PASS',
+            'MARK', 'ADVCL_RELCL', 'ADVMOD', 'NMOD', 'IOBJ', 'DET_PREDET', 'FIXED',
+            'DET', 'COMPOUND', 'NSUBJ'  # 所有依赖关系
+        ]
 
-    # obl:tmod相关字段
-    OBL_TMOD = Column(Integer)
+        # 确保temp_list的长度与field_names匹配
+        assert len(temp_list) == len(field_names), "temp_list的长度与字段数量不匹配"
 
-    # advcl相关字段
-    ADVCL = Column(Integer)
+        dependency_path = temp_list[2]  # 第三个元素是依赖路径列表
+        if isinstance(dependency_path, list):
+            temp_list[2] = json.dumps(dependency_path, ensure_ascii=False)  # 转换列表为JSON字符串
 
-    # obl:agent相关字段
-    OBL_AGENT = Column(Integer)
+        # 使用zip函数将字段名与值配对，然后转换为字典
+        data_dict = dict(zip(field_names, temp_list))
 
-    # 并列连词
-    CONJ = Column(Integer)
+        # 使用字典解包创建SentenceDataORM实例
+        return SentenceDataORM(**data_dict)
 
-    # obl相关字段
-    OBL = Column(Integer)
-
-    # 并列连词
-    CC = Column(Integer)
-
-    # obl:npmod相关字段
-    OBL_NPMOD = Column(Integer)
-
-    # cc:preconj相关字段
-    CC_PRECONJ = Column(Integer)
-
-    # 系动词
-    COP = Column(Integer)
-
-    # nmod:poss相关字段
-    NMOD_POSSESS = Column(Integer)
-
-    # 标点符号
-    PUNCT = Column(Integer)
-
-    # xcomp相关字段
-    XCOMP = Column(Integer)
-
-    # 空语类
-    EXPL = Column(Integer)
-
-    # 助动词
-    AUX = Column(Integer)
-
-    # 宾语
-    OBJ = Column(Integer)
-
-    # 属性补语
-    ACL = Column(Integer)
-
-    # 结果补语
-    CCOMP = Column(Integer)
-
-    # 定语从句关系词
-    ACL_RELCL = Column(Integer)
-
-    # 依赖关系
-    DEP = Column(Integer)
-
-    # 同位关系
-    APPOS = Column(Integer)
-
-    # 被动主语
-    NSUBJ_PASS = Column(Integer)
-
-    # 平坦结构
-    FLAT = Column(Integer)
-
-    # 格标记
-    CASE = Column(Integer)
-
-    # 形容词修饰名词
-    AMOD = Column(Integer)
-
-    # 根节点
-    ROOT = Column(Integer)
-
-    # nmod:npmod相关字段
-    NMOD_NPMOD = Column(Integer)
-
-    # 被动态助动词
-    AUX_PASS = Column(Integer)
-
-    # 标记
-    MARK = Column(Integer)
-
-    # advcl:relcl相关字段
-    ADVCL_RELCL = Column(Integer)
-
-    # 副词修饰语
-    ADVMOD = Column(Integer)
-
-    # nmod相关字段
-    NMOD = Column(Integer)
-
-    # 间接宾语
-    IOBJ = Column(Integer)
-
-    # det:predet相关字段
-    DET_PREDET = Column(Integer)
-
-    # 固定表达
-    FIXED = Column(Integer)
-
-    # 决定词
-    DET = Column(Integer)
-
-    # 合成词
-    COMPOUND = Column(Integer)
-
-    # 主语
-    NSUBJ = Column(Integer)
+    # CREATE
+    # TABLE
+    # SENTENCES_DATA(
+    #     ID
+    # NUMBER
+    # GENERATED
+    # BY
+    # DEFAULT
+    # ON
+    # NULL
+    # AS
+    # IDENTITY
+    # PRIMARY
+    # KEY,
+    # SENTENCE
+    # VARCHAR2(128),
+    # SAME_DEPENDENCY
+    # NUMBER(1),
+    # DEPENDENCY_PATH
+    # VARCHAR2(128),
+    # SENTENCE_PATTERN
+    # VARCHAR2(32),
+    # SENTENCE_STRUCTURE_WORD
+    # VARCHAR2(32),
+    # SENTENCE_STRUCTURE_WORD_POS
+    # VARCHAR2(32),
+    # QUESTION_WORD_POS
+    # VARCHAR2(32),
+    # NUMMOD
+    # NUMBER(1),
+    # OBL_TMOD
+    # NUMBER(1),
+    # ADVCL
+    # NUMBER(1),
+    # OBL_AGENT
+    # NUMBER(1),
+    # CONJ
+    # NUMBER(1),
+    # OBL
+    # NUMBER(1),
+    # CC
+    # NUMBER(1),
+    # OBL_NPMOD
+    # NUMBER(1),
+    # CC_PRECONJ
+    # NUMBER(1),
+    # COP
+    # NUMBER(1),
+    # NMOD_POSSESS
+    # NUMBER(1),
+    # PUNCT
+    # NUMBER(1),
+    # XCOMP
+    # NUMBER(1),
+    # EXPL
+    # NUMBER(1),
+    # AUX
+    # NUMBER(1),
+    # OBJ
+    # NUMBER(1),
+    # ACL
+    # NUMBER(1),
+    # CCOMP
+    # NUMBER(1),
+    # ACL_RELCL
+    # NUMBER(1),
+    # DEP
+    # NUMBER(1),
+    # APPOS
+    # NUMBER(1),
+    # NSUBJ_PASS
+    # NUMBER(1),
+    # FLAT
+    # NUMBER(1),
+    # CASE
+    # NUMBER(1),
+    # AMOD
+    # NUMBER(1),
+    # ROOT
+    # NUMBER(1),
+    # NMOD_NPMOD
+    # NUMBER(1),
+    # AUX_PASS
+    # NUMBER(1),
+    # MARK
+    # NUMBER(1),
+    # ADVCL_RELCL
+    # NUMBER(1),
+    # ADVMOD
+    # NUMBER(1),
+    # NMOD
+    # NUMBER(1),
+    # IOBJ
+    # NUMBER(1),
+    # DET_PREDET
+    # NUMBER(1),
+    # FIXED
+    # NUMBER(1),
+    # DET
+    # NUMBER(1),
+    # COMPOUND
+    # NUMBER(1),
+    # NSUBJ
+    # NUMBER(1)
+    # );

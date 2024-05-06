@@ -32,9 +32,14 @@ class DependencyResolver:
             self.father[word].append(head_word)
             # print(ration, head_word, word)
             if head_word not in self.edge_dict:
-                self.edge_dict[head_word] = [(word, ration)]
+                self.edge_dict[head_word] = [(word, ration, '-->')]
             else:
-                self.edge_dict[head_word].append((word, ration))
+                self.edge_dict[head_word].append((word, ration, '-->'))
+
+            if word not in self.edge_dict:
+                self.edge_dict[word] = [(head_word, ration, '<--')]
+            else:
+                self.edge_dict[word].append((head_word, ration, '<--'))
 
             # head_word, word = word, head_word
             # if word not in self.edge_dict:
@@ -64,73 +69,52 @@ class DependencyResolver:
             return
         if word not in self.edge_dict:
             return
-        for word_and_relation in self.edge_dict[word]:
-            next_word, next_relation = word_and_relation[0], word_and_relation[1]
+        for word_and_relation_and_direction in self.edge_dict[word]:
+            next_word, next_relation, direction = word_and_relation_and_direction[0], word_and_relation_and_direction[1], word_and_relation_and_direction[2]
             if next_word in self.used_word and self.used_word[next_word] == True:
                 continue
-            dependency_structure = [f'[{next_relation}：{word},{next_word}]']
+            dependency_structure = [f'[{next_relation}：{direction}]']
             self.used_word[next_word] = True
             self.find_dependency_paths(next_word, target_word, path + dependency_structure)
             self.used_word[next_word] = False
 
     def get_dependency_paths(self):
-        word, target_word = self.question_word, self.structure_word
+        word, target_word = self.structure_word,self.question_word
         if word == target_word:
-            return (1, '')
+            return ''
         for ration, words in self.dependency_relations:
             if words[0] == word and words[1] == target_word or words[0] == target_word and words[1] == word:
-                return (1, '')
+                return ''
 
         self.used_word[word] = True
         self.find_dependency_paths(word, target_word, [])
         self.used_word[word] = False
 
-        word, target_word = target_word, word
-        self.used_word[word] = True
-        self.find_dependency_paths(word, target_word, [])
-        self.used_word[word] = False
 
-        for index, dependency_structure in enumerate(self.dependency_paths_list):
-            if len(dependency_structure) > 0:
-                self.dependency_paths_list[index] = '-->'.join(self.dependency_paths_list[index])
+        if(len(self.dependency_paths_list) > 0):
+            # print('类型一：')
+            # print(f'{self.sentence}')
 
-        if len(self.dependency_paths_list) == 0:
-            v = set()
-            used_v = set()
-            v.add(word)
-            used_v.add(word)
-            flag = True
-            # print('----------------------begin-----------------------------\n')
-            while len(v) > 0 and flag:
-                temp_v = set()
-                for v_word in v:
-                    for father_word in self.father[v_word]:
-                        if father_word not in used_v:
-                            temp_v.add(father_word)
-                            used_v.add(father_word)
+            # 计算最短路径长度
+            min_length_paths = min(len(path) for path in self.dependency_paths_list)
 
-                v = temp_v
-                for v_word in v:
-                    self.used_word[v_word] = True
-                    self.find_dependency_paths(v_word, word, [])
-                    self.used_word[v_word] = False
-                    if len(self.dependency_paths_list) == 0:
-                        self.dependency_paths_list.clear()
-                        continue
+            # 保存所有长度不大于最短路径长度的路径
+            self.dependency_paths_list = [path for path in self.dependency_paths_list if len(path) == min_length_paths]
 
-                    self.used_word[v_word] = True
-                    self.find_dependency_paths(v_word, target_word, [])
-                    self.used_word[v_word] = False
-                    if len(self.dependency_paths_list) <= 1:
-                        self.dependency_paths_list.clear()
-                        continue
-                    self.dependency_paths_list[0] = self.dependency_paths_list[0][::-1]
-                    self.dependency_paths_list[0] = '<--'.join(self.dependency_paths_list[0])
-                    self.dependency_paths_list[1] = '-->'.join(self.dependency_paths_list[1])
-                    self.dependency_paths_list[0] = self.dependency_paths_list[0] + '--' + self.dependency_paths_list[1]
-                    self.dependency_paths_list.pop()
-                    flag = False
-                    break
+            # 转换为字符串
+            self.dependency_paths_list = ['-->'.join(path) for path in self.dependency_paths_list if path]
 
-            # print('----------------------end-----------------------------\n')
-        return (0, self.dependency_paths_list)
+            # for dependency_path in self.dependency_paths_list:
+            #     print(dependency_path)
+            #     print(type(dependency_path))
+            # print('\n\n')
+        else:
+            print('类型二：')
+            print(f'{self.sentence}')
+
+
+
+
+
+        # print('----------------------end-----------------------------\n')
+        return self.dependency_paths_list
