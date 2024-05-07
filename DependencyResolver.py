@@ -113,7 +113,8 @@ class DependencyResolver:
             print(f'{self.sentence}')
 
 
-
+        if(len(self.dependency_paths_list) > 1):
+            print(self.sentence, len(self.dependency_paths_list))
 
 
         # print('----------------------end-----------------------------\n')

@@ -180,6 +180,10 @@ def get_dependency_results_and_same_dependency_result(words_structure_result, de
 
 
 def get_word_from_str(s):
+    second_colon_pos = s.find('：', s.find('：') + 1)
+    temp_str = s[second_colon_pos + 1:].strip()
+    if temp_str == 'VB':
+        return temp_str
     return s[s.find('：') + 1: s.find(',')].strip()  # 从冒号之后的字符开始取到字符串结束
 
 
