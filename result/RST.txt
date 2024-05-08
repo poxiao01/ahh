@@ -1,7 +1,7 @@
 1.Which companies are in the computer software industry?
 疑问词：companies, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['companies', 'Which'])
 (nsubj: ['industry', 'companies'])
@@ -15,7 +15,7 @@
 2.Which telecommunications organizations are located in Belgium?
 疑问词：organizations, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['organizations', 'Which'])
 (compound: ['organizations', 'telecommunications'])
@@ -28,7 +28,7 @@
 3.Give me the official websites of actors of the television show Charmed.
 疑问词：websites, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -46,7 +46,7 @@
 4.Give me the capitals of all U.S. states.
 疑问词：capitals, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -60,7 +60,7 @@
 5.What are the official languages of the Philippines?
 疑问词：languages, 词性：NNS
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'are'])
@@ -74,7 +74,7 @@
 6.Who is the mayor of New York City?
 疑问词：mayor, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['mayor', 'Who'])
 (cop: ['mayor', 'is'])
@@ -111,7 +111,7 @@
 9.Which countries have more than two official languages?
 疑问词：countries, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['countries', 'Which'])
 (nsubj: ['have', 'countries'])
@@ -125,7 +125,7 @@
 10.What is the area code of Berlin?
 疑问词：code, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -138,7 +138,7 @@
 11.Which classis does the Millepede belong to?
 疑问词：classis, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['classis', 'Which'])
 (obl: ['belong', 'classis'])
@@ -151,7 +151,7 @@
 12.In which country is the Limerick Lake?
 疑问词：country, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['country', 'In'])
 (det: ['country', 'which'])
@@ -164,7 +164,7 @@
 13.What is the profession of Frank Herbert?
 疑问词：profession, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -177,7 +177,7 @@
 14.Who is the owner of Universal Studios?
 疑问词：owner, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['owner', 'Who'])
 (cop: ['owner', 'is'])
@@ -208,7 +208,7 @@
 16.Give me all cities in New Jersey with more than 100000 inhabitants.
 疑问词：cities, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -226,7 +226,7 @@
 17.What is the currency of the Czech Republic?
 疑问词：currency, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -240,7 +240,7 @@
 18.Which European countries are a constitutional monarchy?
 疑问词：countries, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['countries', 'Which'])
 (amod: ['countries', 'European'])
@@ -267,7 +267,7 @@
 20.Which countries in the European Union adopted the Euro?
 疑问词：countries, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['countries', 'Which'])
 (nsubj: ['adopted', 'countries'])
@@ -282,7 +282,7 @@
 21.Which presidents of the United States had more than three children?
 疑问词：presidents, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['presidents', 'Which'])
 (nsubj: ['had', 'presidents'])
@@ -299,7 +299,7 @@
 22.What is the highest mountain in Germany?
 疑问词：mountain, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -312,7 +312,7 @@
 23.Give me the homepage of Forbes.
 疑问词：homepage, 词性：NN
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -324,7 +324,7 @@
 24.Give me all soccer clubs in Spain.
 疑问词：clubs, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -337,7 +337,7 @@
 25.What is the revenue of IBM?
 疑问词：revenue, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -349,7 +349,7 @@
 26.Which states of Germany are governed by the Social Democratic Party?
 疑问词：states, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['states', 'Which'])
 (nsubj:pass: ['governed', 'states'])
@@ -366,7 +366,7 @@
 27.In which films directed by Garry Marshall was Julia Roberts starring?
 疑问词：films, 词性：NNS
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['films', 'In'])
 (det: ['films', 'which'])
@@ -383,7 +383,7 @@
 28.Which museum exhibits The Scream by Munch?
 疑问词：museum, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['museum', 'Which'])
 (nsubj: ['exhibits', 'museum'])
@@ -419,7 +419,7 @@
 31.Through which countries does the Yenisei river flow?
 疑问词：countries, 词性：NNS
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['countries', 'Through'])
 (det: ['countries', 'which'])
@@ -433,7 +433,7 @@
 32.Which monarchs of the United Kingdom were married to a German?
 疑问词：monarchs, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['monarchs', 'Which'])
 (nsubj:pass: ['married', 'monarchs'])
@@ -465,7 +465,7 @@
 34.Which states border Utah?
 疑问词：states, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['states', 'Which'])
 (compound: ['Utah', 'states'])
@@ -475,7 +475,7 @@
 35.Which U.S. states possess gold minerals?
 疑问词：states, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['states', 'Which'])
 (compound: ['states', 'U.S.'])
@@ -487,7 +487,7 @@
 36.Who is the author of WikiLeaks?
 疑问词：author, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['author', 'Who'])
 (cop: ['author', 'is'])
@@ -510,7 +510,7 @@
 38.Which bridges are of the same type as the Manhattan Bridge?
 疑问词：bridges, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['bridges', 'Which'])
 (nsubj: ['type', 'bridges'])
@@ -527,7 +527,7 @@
 39.Which river does the Brooklyn Bridge cross?
 疑问词：river, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['river', 'Which'])
 (nsubj: ['does', 'river'])
@@ -540,7 +540,7 @@
 40.Which locations have more than two caves?
 疑问词：locations, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['locations', 'Which'])
 (nsubj: ['have', 'locations'])
@@ -553,7 +553,7 @@
 41.Which mountain is the highest after the Annapurna?
 疑问词：mountain, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['mountain', 'Which'])
 (nsubj: ['highest', 'mountain'])
@@ -567,7 +567,7 @@
 42.What is the highest place of Karakoram?
 疑问词：place, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -604,7 +604,7 @@
 45.How tall is Claudia Schiffer?
 疑问词：tall, 词性：JJ
 句型词： How, 词性： WRB
-依赖路径：
+依赖路径：['advmod：<--']
 依赖结构：
 (advmod: ['tall', 'How'])
 (amod: ['Claudia', 'tall'])
@@ -615,7 +615,7 @@
 46.In which country does the Nile start?
 疑问词：country, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['country', 'In'])
 (det: ['country', 'which'])
@@ -628,7 +628,7 @@
 47.Which German cities have more than 250000 inhabitants?
 疑问词：cities, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['cities', 'Which'])
 (amod: ['cities', 'German'])
@@ -642,7 +642,7 @@
 48.Who was the successor of John F. Kennedy?
 疑问词：successor, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['successor', 'Who'])
 (cop: ['successor', 'was'])
@@ -656,7 +656,7 @@
 49.Who is the mayor of Berlin?
 疑问词：mayor, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['mayor', 'Who'])
 (cop: ['mayor', 'is'])
@@ -684,7 +684,7 @@
 51.What is the second highest mountain on Earth?
 疑问词：mountain, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -698,7 +698,7 @@
 52.Give me all professional skateboarders from Sweden.
 疑问词：skateboarders, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -723,7 +723,7 @@
 54.To which countries does the Himalayan mountain system extend?
 疑问词：countries, 词性：NNS
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['countries', 'To'])
 (det: ['countries', 'which'])
@@ -738,7 +738,7 @@
 55.Give me a list of all trumpet players that were bandleaders.
 疑问词：list, 词性：NN
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -755,7 +755,7 @@
 56.What is the total amount of men and women serving in the FDNY?
 疑问词：amount, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -774,7 +774,7 @@
 57.Who is the Formula 1 race driver with the most races?
 疑问词：driver, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['driver', 'Who'])
 (cop: ['driver', 'is'])
@@ -809,7 +809,7 @@
 59.Who is the youngest player in the Premier League?
 疑问词：player, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['player', 'Who'])
 (cop: ['player', 'is'])
@@ -824,7 +824,7 @@
 60.Give me all members of Prodigy.
 疑问词：members, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -836,7 +836,7 @@
 61.What is the longest river?
 疑问词：river, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -847,7 +847,7 @@
 62.Give me all cars that are produced in Germany.
 疑问词：cars, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -862,7 +862,7 @@
 63.Give me all people that were born in Vienna and died in Berlin.
 疑问词：people, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -881,7 +881,7 @@
 64.How tall is Michael Jordan?
 疑问词：tall, 词性：JJ
 句型词： How, 词性： WRB
-依赖路径：
+依赖路径：['advmod：<--']
 依赖结构：
 (advmod: ['tall', 'How'])
 (nsubj: ['Michael', 'tall'])
@@ -892,7 +892,7 @@
 65.What is the capital of Canada?
 疑问词：capital, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -904,7 +904,7 @@
 66.Who is the governor of Texas?
 疑问词：governor, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['governor', 'Who'])
 (cop: ['governor', 'is'])
@@ -916,7 +916,7 @@
 67.Who was the father of Queen Elizabeth II?
 疑问词：father, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['father', 'Who'])
 (cop: ['father', 'was'])
@@ -930,7 +930,7 @@
 68.Which U.S. state has been admitted latest?
 疑问词：state, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['state', 'Which'])
 (compound: ['state', 'U.S.'])
@@ -973,7 +973,7 @@
 71.Give me all movies directed by Francis Ford Coppola.
 疑问词：movies, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -988,7 +988,7 @@
 72.Give me all actors starring in movies directed by and starring William Shatner.
 疑问词：actors, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -1007,7 +1007,7 @@
 73.What is the birth name of Angela Merkel?
 疑问词：name, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -1021,7 +1021,7 @@
 74.Give me all current Methodist national leaders.
 疑问词：leaders, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -1034,7 +1034,7 @@
 75.How often did Nicole Kidman marry?
 疑问词：often, 词性：RB
 句型词： How, 词性： WRB
-依赖路径：
+依赖路径：['advmod：<--']
 依赖结构：
 (advmod: ['often', 'How'])
 (advmod: ['marry', 'often'])
@@ -1046,7 +1046,7 @@
 76.Give me all Australian nonprofit organizations.
 疑问词：organizations, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -1082,7 +1082,7 @@
 79.What is the melting point of copper?
 疑问词：point, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -1095,7 +1095,7 @@
 80.Give me all sister cities of Brno.
 疑问词：cities, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -1120,7 +1120,7 @@
 82.Give me all companies in Munich.
 疑问词：companies, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -1132,7 +1132,7 @@
 83.List all boardgames by GMT.
 疑问词：boardgames, 词性：NNS
 句型词：List, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['List', 'List'])
 (det: ['boardgames', 'all'])
@@ -1152,7 +1152,7 @@
 85.Who is the husband of Amanda Palmer?
 疑问词：husband, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['husband', 'Who'])
 (cop: ['husband', 'is'])
@@ -1180,7 +1180,7 @@
 87.Which cities does the Weser flow through?
 疑问词：cities, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['cities', 'Which'])
 (nsubj: ['does', 'cities'])
@@ -1193,7 +1193,7 @@
 88.Which countries are connected by the Rhine?
 疑问词：countries, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['countries', 'Which'])
 (nsubj:pass: ['connected', 'countries'])
@@ -1206,7 +1206,7 @@
 89.Which professional surfers were born on the Philippines?
 疑问词：surfers, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['surfers', 'Which'])
 (amod: ['surfers', 'professional'])
@@ -1220,7 +1220,7 @@
 90.What is the average temperature on Hawaii?
 疑问词：temperature, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -1249,7 +1249,7 @@
 92.Which other weapons did the designer of the Uzi develop?
 疑问词：weapons, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['weapons', 'Which'])
 (amod: ['weapons', 'other'])
@@ -1265,7 +1265,7 @@
 93.Give me all Frisian islands that belong to the Netherlands.
 疑问词：islands, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -1291,7 +1291,7 @@
 95.What is the ruling party in Lisbon?
 疑问词：party, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -1304,7 +1304,7 @@
 96.What are the nicknames of San Francisco?
 疑问词：nicknames, 词性：NNS
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'are'])
@@ -1317,7 +1317,7 @@
 97.Which Greek goddesses dwelt on Mount Olympus?
 疑问词：goddesses, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['goddesses', 'Which'])
 (amod: ['goddesses', 'Greek'])
@@ -1342,7 +1342,7 @@
 99.Give me the Apollo 14 astronauts.
 疑问词：astronauts, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -1354,7 +1354,7 @@
 100.What is the time zone of Salt Lake City?
 疑问词：zone, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -1369,7 +1369,7 @@
 101.Which U.S. states are in the same timezone as Utah?
 疑问词：states, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['states', 'Which'])
 (compound: ['states', 'U.S.'])
@@ -1385,7 +1385,7 @@
 102.Give me a list of all lakes in Denmark.
 疑问词：list, 词性：NN
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -1413,7 +1413,7 @@
 104.Give me all Argentine films.
 疑问词：films, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -1438,7 +1438,7 @@
 106.Which instruments did John Lennon play?
 疑问词：instruments, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['instruments', 'Which'])
 (obj: ['play', 'instruments'])
@@ -1450,7 +1450,7 @@
 107.Which ships were called after Benjamin Franklin?
 疑问词：ships, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['ships', 'Which'])
 (nsubj:pass: ['called', 'ships'])
@@ -1463,7 +1463,7 @@
 108.Who are the parents of the wife of Juan Carlos I?
 疑问词：parents, 词性：NNS
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['Who', 'Who'])
 (cop: ['Who', 'are'])
@@ -1543,7 +1543,7 @@
 114.Which daughters of British earls died in the same place they were born in?
 疑问词：daughters, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['daughters', 'Which'])
 (nsubj: ['died', 'daughters'])
@@ -1563,7 +1563,7 @@
 115.List the children of Margaret Thatcher.
 疑问词：children, 词性：NNS
 句型词：List, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['List', 'List'])
 (det: ['children', 'the'])
@@ -1585,7 +1585,7 @@
 117.Give me all books by William Goldman with more than 300 pages.
 疑问词：books, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -1603,7 +1603,7 @@
 118.Which books by Kerouac were published by Viking Press?
 疑问词：books, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['books', 'Which'])
 (nsubj:pass: ['published', 'books'])
@@ -1618,7 +1618,7 @@
 119.Give me a list of all American inventions.
 疑问词：list, 词性：NN
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -1632,7 +1632,7 @@
 120.How high is the Mount Everest?
 疑问词：high, 词性：JJ
 句型词： How, 词性： WRB
-依赖路径：
+依赖路径：['advmod：<--']
 依赖结构：
 (advmod: ['high', 'How'])
 (root: ['high', 'high'])
@@ -1671,7 +1671,7 @@
 123.What is the largest city in Australia?
 疑问词：city, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -1698,7 +1698,7 @@
 125.Which films starring Clint Eastwood did he direct himself?
 疑问词：films, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['films', 'Which'])
 (obl:npmod: ['direct', 'films'])
@@ -1713,7 +1713,7 @@
 126.In which city was the former Dutch queen Juliana buried?
 疑问词：city, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['city', 'In'])
 (det: ['city', 'which'])
@@ -1729,7 +1729,7 @@
 127.Where is the residence of the prime minister of Spain?
 疑问词：residence, 词性：NN
 句型词： Where, 词性： WRB
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['Where', 'Where'])
 (cop: ['Where', 'is'])
@@ -1745,7 +1745,7 @@
 128.Which U.S. State has the abbreviation MN?
 疑问词：State, 词性：NNP
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['State', 'Which'])
 (compound: ['State', 'U.S.'])
@@ -1758,7 +1758,7 @@
 129.Show me all songs from Bruce Springsteen released between 1980 and 1990.
 疑问词：songs, 词性：NNS
 句型词：Show, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Show', 'Show'])
 (iobj: ['Show', 'me'])
@@ -1776,7 +1776,7 @@
 130.Which movies did Sam Raimi direct after Army of Darkness?
 疑问词：movies, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['movies', 'Which'])
 (obj: ['direct', 'movies'])
@@ -1792,7 +1792,7 @@
 131.What is the founding year of the brewery that produces Pilsner Urquell?
 疑问词：year, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -1825,7 +1825,7 @@
 133.Give me all B-sides of the Ramones.
 疑问词：sides, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -1855,7 +1855,7 @@
 135.Which country does the creator of Miffy come from?
 疑问词：country, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['country', 'Which'])
 (nsubj: ['does', 'country'])
@@ -1870,7 +1870,7 @@
 136.For which label did Elvis record his first album?
 疑问词：label, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['label', 'For'])
 (det: ['label', 'which'])
@@ -1894,7 +1894,7 @@
 138.Who is the governor of Wyoming?
 疑问词：governor, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['governor', 'Who'])
 (cop: ['governor', 'is'])
@@ -1915,7 +1915,7 @@
 140.List all games by GMT.
 疑问词：games, 词性：NNS
 句型词：List, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['List', 'List'])
 (det: ['games', 'all'])
@@ -1926,7 +1926,7 @@
 141.In which U.S. state is Fort Knox located?
 疑问词：state, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['which', 'In'])
 (det: ['state', 'which'])
@@ -1940,7 +1940,7 @@
 142.Which U.S. state has the abbreviation MN?
 疑问词：state, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['state', 'Which'])
 (compound: ['state', 'U.S.'])
@@ -1953,7 +1953,7 @@
 143.Which movies did Kurosawa direct after Rashomon?
 疑问词：movies, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['movies', 'Which'])
 (obj: ['direct', 'movies'])
@@ -1966,7 +1966,7 @@
 144.Give me all taikonauts.
 疑问词：taikonauts, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -1989,7 +1989,7 @@
 146.Which poet wrote the most books?
 疑问词：poet, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['poet', 'Which'])
 (nsubj: ['wrote', 'poet'])
@@ -2013,7 +2013,7 @@
 148.Give me all Dutch parties.
 疑问词：parties, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -2035,7 +2035,7 @@
 150.Which rivers flow into a German lake?
 疑问词：rivers, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['rivers', 'Which'])
 (nsubj: ['flow', 'rivers'])
@@ -2048,7 +2048,7 @@
 151.How heavy is Jupiter's lightest moon?
 疑问词：heavy, 词性：JJ
 句型词： How, 词性： WRB
-依赖路径：
+依赖路径：['advmod：<--']
 依赖结构：
 (advmod: ['heavy', 'How'])
 (root: ['heavy', 'heavy'])
@@ -2061,7 +2061,7 @@
 152.Who is the youngest Darts player?
 疑问词：player, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['player', 'Who'])
 (cop: ['player', 'is'])
@@ -2073,7 +2073,7 @@
 153.Give me all animals that are extinct.
 疑问词：animals, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -2100,7 +2100,7 @@
 155.Which ingredients do I need for carrot cake?
 疑问词：ingredients, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['ingredients', 'Which'])
 (obj: ['need', 'ingredients'])
@@ -2114,7 +2114,7 @@
 156.What is the most frequent death cause?
 疑问词：cause, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -2140,7 +2140,7 @@
 158.Who is the tallest player of the Atlanta Falcons?
 疑问词：player, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['player', 'Who'])
 (cop: ['player', 'is'])
@@ -2155,7 +2155,7 @@
 159.What is the bridge with the longest span?
 疑问词：bridge, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -2169,7 +2169,7 @@
 160.Give me all films produced by Steven Spielberg with a budget of at least $80 million.
 疑问词：films, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -2192,7 +2192,7 @@
 161.Which actor was casted in the most movies?
 疑问词：actor, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['actor', 'Which'])
 (nsubj:pass: ['casted', 'actor'])
@@ -2216,7 +2216,7 @@
 163.Which of Tim Burton's films had the highest budget?
 疑问词：films, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['nmod：-->']
 依赖结构：
 (nsubj: ['had', 'Which'])
 (case: ['films', 'of'])
@@ -2232,7 +2232,7 @@
 164.Who are the four youngest MVP basketball players?
 疑问词：players, 词性：NNS
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['Who', 'Who'])
 (cop: ['Who', 'are'])
@@ -2299,7 +2299,7 @@
 168.What was Brazil's lowest rank in the FIFA World Ranking?
 疑问词：rank, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'was'])
@@ -2316,7 +2316,7 @@
 169.Give me all Australian metalcore bands.
 疑问词：bands, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -2353,7 +2353,7 @@
 172.In which countries can you pay using the West African CFA franc?
 疑问词：countries, 词性：NNS
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['countries', 'In'])
 (det: ['countries', 'which'])
@@ -2371,7 +2371,7 @@
 173.Give me the capitals of all countries that the Himalayas run through.
 疑问词：capitals, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -2421,7 +2421,7 @@
 176.Which pope succeeded John Paul II?
 疑问词：pope, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['pope', 'Which'])
 (nsubj: ['succeeded', 'pope'])
@@ -2433,7 +2433,7 @@
 177.What was the last movie with Alec Guinness?
 疑问词：movie, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'was'])
@@ -2460,7 +2460,7 @@
 179.Which actor played Chewbacca?
 疑问词：actor, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['actor', 'Which'])
 (nsubj: ['played', 'actor'])
@@ -2470,7 +2470,7 @@
 180.Give me the grandchildren of Bruce Lee.
 疑问词：grandchildren, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -2483,7 +2483,7 @@
 181.Give me all writers that won the Nobel Prize in literature.
 疑问词：writers, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -2500,7 +2500,7 @@
 182.What is the official color of the University of Oxford?
 疑问词：color, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -2516,7 +2516,7 @@
 183.Give me all Swedish oceanographers.
 疑问词：oceanographers, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -2527,7 +2527,7 @@
 184.How deep is Lake Placid?
 疑问词：deep, 词性：JJ
 句型词： How, 词性： WRB
-依赖路径：
+依赖路径：['advmod：<--']
 依赖结构：
 (advmod: ['deep', 'How'])
 (root: ['deep', 'deep'])
@@ -2538,7 +2538,7 @@
 185.Which spaceflights were launched from Baikonur?
 疑问词：spaceflights, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['spaceflights', 'Which'])
 (nsubj:pass: ['launched', 'spaceflights'])
@@ -2550,7 +2550,7 @@
 186.Give me all actors called Baldwin.
 疑问词：actors, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -2573,7 +2573,7 @@
 188.In which studio did the Beatles record their first album?
 疑问词：studio, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (mark: ['did', 'In'])
 (det: ['studio', 'which'])
@@ -2607,7 +2607,7 @@
 190.Give me all ESA astronauts.
 疑问词：astronauts, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -2618,7 +2618,7 @@
 191.Give me all Swedish holidays.
 疑问词：holidays, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -2629,7 +2629,7 @@
 192.Who is the youngest Pulitzer Prize winner?
 疑问词：winner, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['Who', 'Who'])
 (cop: ['Who', 'is'])
@@ -2642,7 +2642,7 @@
 193.Which animals are critically endangered?
 疑问词：animals, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['animals', 'Which'])
 (nsubj: ['endangered', 'animals'])
@@ -2653,7 +2653,7 @@
 194.Which soccer players were born on Malta?
 疑问词：players, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['players', 'Which'])
 (compound: ['players', 'soccer'])
@@ -2666,7 +2666,7 @@
 195.Which programming languages were influenced by Perl?
 疑问词：languages, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['languages', 'Which'])
 (compound: ['languages', 'programming'])
@@ -2692,7 +2692,7 @@
 197.Who is the oldest child of Meryl Streep?
 疑问词：child, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['child', 'Who'])
 (cop: ['child', 'is'])
@@ -2716,7 +2716,7 @@
 199.In which city is Air China headquartered?
 疑问词：city, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['city', 'In'])
 (det: ['city', 'which'])
@@ -2729,7 +2729,7 @@
 200.Which frequent flyer program has the most airlines?
 疑问词：program, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['program', 'Which'])
 (amod: ['program', 'frequent'])
@@ -2743,7 +2743,7 @@
 201.Which artists were born on the same date as Rachel Stevens?
 疑问词：artists, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['artists', 'Which'])
 (nsubj:pass: ['born', 'artists'])
@@ -2805,7 +2805,7 @@
 205.Who is the manager of Real Madrid?
 疑问词：manager, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['manager', 'Who'])
 (cop: ['manager', 'is'])
@@ -2818,7 +2818,7 @@
 206.Give me the currency of China.
 疑问词：currency, 词性：NN
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -2830,7 +2830,7 @@
 207.Which movies starring Brad Pitt were directed by Guy Ritchie?
 疑问词：movies, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['movies', 'Which'])
 (nsubj:pass: ['directed', 'movies'])
@@ -2879,7 +2879,7 @@
 210.Which subsidiary of Lufthansa serves both Dortmund and Berlin Tegel?
 疑问词：subsidiary, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['subsidiary', 'Which'])
 (nsubj: ['serves', 'subsidiary'])
@@ -2910,7 +2910,7 @@
 212.Give me all spacecrafts that flew to Mars.
 疑问词：spacecrafts, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -2924,7 +2924,7 @@
 213.Which musician wrote the most books?
 疑问词：musician, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['musician', 'Which'])
 (nsubj: ['wrote', 'musician'])
@@ -2950,7 +2950,7 @@
 215.Give me all Swiss non-profit organizations.
 疑问词：organizations, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -2962,7 +2962,7 @@
 216.In which country is Mecca located?
 疑问词：country, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['country', 'In'])
 (det: ['country', 'which'])
@@ -2974,7 +2974,7 @@
 217.What is the net income of Apple?
 疑问词：income, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -3012,7 +3012,7 @@
 220.Which museum in New York has the most visitors?
 疑问词：museum, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['museum', 'Which'])
 (nsubj: ['has', 'museum'])
@@ -3039,7 +3039,7 @@
 222.What is the highest mountain in Italy?
 疑问词：mountain, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -3067,7 +3067,7 @@
 224.Which Greek parties are pro-European?
 疑问词：parties, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['parties', 'Which'])
 (amod: ['parties', 'Greek'])
@@ -3078,7 +3078,7 @@
 225.What is the height difference between Mount Everest and K2?
 疑问词：difference, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -3094,7 +3094,7 @@
 226.Who is the mayor of Rotterdam?
 疑问词：mayor, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['mayor', 'Who'])
 (cop: ['mayor', 'is'])
@@ -3122,7 +3122,7 @@
 228.How high is the Yokohama Marine Tower?
 疑问词：high, 词性：JJ
 句型词： How, 词性： WRB
-依赖路径：
+依赖路径：['advmod：<--']
 依赖结构：
 (advmod: ['high', 'How'])
 (root: ['high', 'high'])
@@ -3148,7 +3148,7 @@
 230.List the seven kings of Rome.
 疑问词：kings, 词性：NNS
 句型词：List, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['List', 'List'])
 (det: ['kings', 'the'])
@@ -3160,7 +3160,7 @@
 231.Who were the parents of Queen Victoria?
 疑问词：parents, 词性：NNS
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['parents', 'Who'])
 (cop: ['parents', 'were'])
@@ -3173,7 +3173,7 @@
 232.Who is the heaviest player of the Chicago Bulls?
 疑问词：player, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['player', 'Who'])
 (cop: ['player', 'is'])
@@ -3188,7 +3188,7 @@
 233.Which volcanos in Japan erupted since 2000?
 疑问词：volcanos, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['volcanos', 'Which'])
 (nsubj: ['erupted', 'volcanos'])
@@ -3201,7 +3201,7 @@
 234.Who is the tallest basketball player?
 疑问词：player, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['player', 'Who'])
 (cop: ['player', 'is'])
@@ -3228,7 +3228,7 @@
 236.Which Secretary of State was significantly involved in the United States' dominance of the Caribbean?
 疑问词：Secretary, 词性：NNP
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['Secretary', 'Which'])
 (nsubj: ['involved', 'Secretary'])
@@ -3250,7 +3250,7 @@
 237.Who is the architect of the tallest building in Japan?
 疑问词：architect, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['architect', 'Who'])
 (cop: ['architect', 'is'])
@@ -3266,7 +3266,7 @@
 238.What is the name of the Viennese newspaper founded by the creator of the croissant?
 疑问词：name, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -3287,7 +3287,7 @@
 239.In which city where Charlie Chaplin's half brothers born?
 疑问词：city, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['city', 'In'])
 (det: ['city', 'which'])
@@ -3320,7 +3320,7 @@
 241.Which writers converted to Islam?
 疑问词：writers, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['writers', 'Which'])
 (nsubj: ['converted', 'writers'])
@@ -3331,7 +3331,7 @@
 242.Which movie by the Coen brothers stars John Turturro in the role of a New York City playwright?
 疑问词：movie, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['movie', 'Which'])
 (nsubj: ['stars', 'movie'])
@@ -3355,7 +3355,7 @@
 243.Which of the volcanoes that erupted in 1550 is still active?
 疑问词：volcanoes, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['nmod：-->']
 依赖结构：
 (nsubj: ['active', 'Which'])
 (case: ['volcanoes', 'of'])
@@ -3372,7 +3372,7 @@
 244.Who was the doctoral supervisor of Albert Einstein?
 疑问词：supervisor, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['supervisor', 'Who'])
 (cop: ['supervisor', 'was'])
@@ -3411,7 +3411,7 @@
 247.Which electronics companies were founded in Beijing?
 疑问词：companies, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['companies', 'Which'])
 (compound: ['companies', 'electronics'])
@@ -3437,7 +3437,7 @@
 249.What is the atmosphere of the Moon composed of?
 疑问词：atmosphere, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -3467,7 +3467,7 @@
 251.Who are the developers of DBpedia?
 疑问词：developers, 词性：NNS
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['Who', 'Who'])
 (cop: ['Who', 'are'])
@@ -3479,7 +3479,7 @@
 252.Which Indian company has the most employees?
 疑问词：company, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['company', 'Which'])
 (amod: ['company', 'Indian'])
@@ -3492,7 +3492,7 @@
 253.What is the name of the school where Obama's wife studied?
 疑问词：name, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -3520,7 +3520,7 @@
 255.What is the capital of Cameroon?
 疑问词：capital, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -3569,7 +3569,7 @@
 259.Which actors play in Big Bang Theory?
 疑问词：actors, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['actors', 'Which'])
 (nsubj: ['play', 'actors'])
@@ -3582,7 +3582,7 @@
 260.What is the largest country in the world?
 疑问词：country, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -3596,7 +3596,7 @@
 261.Who is the most powerful Jedi?
 疑问词：Jedi, 词性：NNP
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['Jedi', 'Who'])
 (cop: ['Jedi', 'is'])
@@ -3620,7 +3620,7 @@
 263.Who is the president of Eritrea?
 疑问词：president, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['president', 'Who'])
 (cop: ['president', 'is'])
@@ -3632,7 +3632,7 @@
 264.Which computer scientist won an oscar?
 疑问词：scientist, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['scientist', 'Which'])
 (compound: ['scientist', 'computer'])
@@ -3666,7 +3666,7 @@
 267.To which party does the mayor of Paris belong?
 疑问词：party, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['party', 'To'])
 (det: ['party', 'which'])
@@ -3722,7 +3722,7 @@
 271.Show me all basketball players that are higher than 2 meters.
 疑问词：players, 词性：NNS
 句型词：Show, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Show', 'Show'])
 (iobj: ['Show', 'me'])
@@ -3739,7 +3739,7 @@
 272.What country is Sitecore from?
 疑问词：country, 词性：NN
 句型词： What, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['country', 'What'])
 (root: ['country', 'country'])
@@ -3750,7 +3750,7 @@
 273.Which country was Bill Gates born in?
 疑问词：country, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['country', 'Which'])
 (nsubj:pass: ['born', 'country'])
@@ -3772,7 +3772,7 @@
 275.In which city did Nikos Kazantzakis die?
 疑问词：city, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['city', 'In'])
 (det: ['city', 'which'])
@@ -3800,7 +3800,7 @@
 277.Which films did Stanley Kubrick direct?
 疑问词：films, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['films', 'Which'])
 (nsubj: ['did', 'films'])
@@ -3829,7 +3829,7 @@
 279.Show me all books in Asimov's Foundation series.
 疑问词：books, 词性：NNS
 句型词：Show, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Show', 'Show'])
 (iobj: ['Show', 'me'])
@@ -3844,7 +3844,7 @@
 280.Which movies star both Liz Taylor and Richard Burton?
 疑问词：movies, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['movies', 'Which'])
 (nsubj: ['star', 'movies'])
@@ -3859,7 +3859,7 @@
 281.In which city are the headquarters of the United Nations?
 疑问词：city, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['city', 'In'])
 (det: ['city', 'which'])
@@ -3875,7 +3875,7 @@
 282.In which city was the president of Montenegro born?
 疑问词：city, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['city', 'In'])
 (det: ['city', 'which'])
@@ -3890,7 +3890,7 @@
 283.Which writers studied in Istanbul?
 疑问词：writers, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['writers', 'Which'])
 (nsubj: ['studied', 'writers'])
@@ -3901,7 +3901,7 @@
 284.Who is the mayor of Paris?
 疑问词：mayor, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['mayor', 'Who'])
 (cop: ['mayor', 'is'])
@@ -3913,7 +3913,7 @@
 285.What is the full name of Prince Charles?
 疑问词：name, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -3927,7 +3927,7 @@
 286.What is the longest river in China?
 疑问词：river, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -3970,7 +3970,7 @@
 290.Who is the host of the BBC Wildlife Specials?
 疑问词：host, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['host', 'Who'])
 (cop: ['host', 'is'])
@@ -3997,7 +3997,7 @@
 292.What was the first Queen album?
 疑问词：album, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'was'])
@@ -4009,7 +4009,7 @@
 293.Give me a list of all Canadians that reside in the U.S.
 疑问词：list, 词性：NN
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -4038,7 +4038,7 @@
 295.In which countries do people speak Japanese?
 疑问词：countries, 词性：NNS
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['countries', 'In'])
 (det: ['countries', 'which'])
@@ -4051,7 +4051,7 @@
 296.Who is the king of the Netherlands?
 疑问词：king, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['king', 'Who'])
 (cop: ['king', 'is'])
@@ -4076,7 +4076,7 @@
 298.Show me all Czech movies.
 疑问词：movies, 词性：NNS
 句型词：Show, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Show', 'Show'])
 (iobj: ['Show', 'me'])
@@ -4087,7 +4087,7 @@
 299.Which rivers flow into the North Sea?
 疑问词：rivers, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['rivers', 'Which'])
 (nsubj: ['flow', 'rivers'])
@@ -4123,7 +4123,7 @@
 302.In which time zone is Rome?
 疑问词：zone, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['zone', 'In'])
 (det: ['zone', 'which'])
@@ -4135,7 +4135,7 @@
 303.Give me a list of all critically endangered birds.
 疑问词：list, 词性：NN
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -4163,7 +4163,7 @@
 305.What was the original occupation of the inventor of Lego?
 疑问词：occupation, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'was'])
@@ -4179,7 +4179,7 @@
 306.Which countries have more than ten volcanoes?
 疑问词：countries, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['countries', 'Which'])
 (nsubj: ['have', 'countries'])
@@ -4192,7 +4192,7 @@
 307.Show me all U.S. states.
 疑问词：states, 词性：NNS
 句型词：Show, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Show', 'Show'])
 (iobj: ['Show', 'me'])
@@ -4229,7 +4229,7 @@
 310.Which companies produce hovercrafts?
 疑问词：companies, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['companies', 'Which'])
 (nsubj: ['produce', 'companies'])
@@ -4273,7 +4273,7 @@
 313.In which ancient empire could you pay with cocoa beans?
 疑问词：empire, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['empire', 'In'])
 (det: ['empire', 'which'])
@@ -4300,7 +4300,7 @@
 315.Which space probes were sent into orbit around the sun?
 疑问词：probes, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['probes', 'Which'])
 (compound: ['probes', 'space'])
@@ -4327,7 +4327,7 @@
 317.What is the biggest stadium in Spain?
 疑问词：stadium, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -4340,7 +4340,7 @@
 318.On which day is Columbus Day?
 疑问词：day, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['day', 'On'])
 (det: ['day', 'which'])
@@ -4377,7 +4377,7 @@
 321.What form of government does Russia have?
 疑问词：form, 词性：NN
 句型词： What, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['form', 'What'])
 (obj: ['have', 'form'])
@@ -4390,7 +4390,7 @@
 322.What movies does Jesse Eisenberg play in?
 疑问词：movies, 词性：NNS
 句型词： What, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['movies', 'What'])
 (obj: ['play', 'movies'])
@@ -4403,7 +4403,7 @@
 323.What color expresses loyalty?
 疑问词：color, 词性：NN
 句型词： What, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['color', 'What'])
 (nsubj: ['expresses', 'color'])
@@ -4413,7 +4413,7 @@
 324.Show me all museums in London.
 疑问词：museums, 词性：NNS
 句型词：Show, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Show', 'Show'])
 (iobj: ['Show', 'me'])
@@ -4425,7 +4425,7 @@
 325.Give me all South American countries.
 疑问词：countries, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -4437,7 +4437,7 @@
 326.Who is the coach of Ankara's ice hockey team?
 疑问词：coach, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['coach', 'Who'])
 (cop: ['coach', 'is'])
@@ -4453,7 +4453,7 @@
 327.Who is the son of Sonny and Cher?
 疑问词：son, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['son', 'Who'])
 (cop: ['son', 'is'])
@@ -4467,7 +4467,7 @@
 328.What are the five boroughs of New York?
 疑问词：boroughs, 词性：NNS
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'are'])
@@ -4481,7 +4481,7 @@
 329.Show me Hemingway's autobiography.
 疑问词：autobiography, 词性：NN
 句型词：Show, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Show', 'Show'])
 (iobj: ['Show', 'me'])
@@ -4506,7 +4506,7 @@
 331.In which city does Sylvester Stallone live?
 疑问词：city, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['city', 'In'])
 (det: ['city', 'which'])
@@ -4532,7 +4532,7 @@
 333.What are the names of the Teenage Mutant Ninja Turtles?
 疑问词：names, 词性：NNS
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'are'])
@@ -4584,7 +4584,7 @@
 337.In what city is the Heineken brewery?
 疑问词：city, 词性：NN
 句型词：what, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['city', 'In'])
 (det: ['city', 'what'])
@@ -4597,7 +4597,7 @@
 338.What is Elon Musk famous for?
 疑问词：famous, 词性：JJ
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['obl：<--']
 依赖结构：
 (obl: ['famous', 'What'])
 (cop: ['famous', 'is'])
@@ -4609,7 +4609,7 @@
 339.What is Batman's real name?
 疑问词：name, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -4621,7 +4621,7 @@
 340.From which region is the Refosco dal Peduncolo Rosso?
 疑问词：region, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['region', 'From'])
 (det: ['region', 'which'])
@@ -4636,7 +4636,7 @@
 341.Give me all Avant-garde jazz record labels.
 疑问词：labels, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -4651,7 +4651,7 @@
 342.Give me all books written by David Foster Wallace.
 疑问词：books, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -4666,7 +4666,7 @@
 343.Give me all cars that are produced in Netherlands.
 疑问词：cars, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -4681,7 +4681,7 @@
 344.Give me all companies in Jena.
 疑问词：companies, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -4693,7 +4693,7 @@
 345.Give me all inflows of the Lake Houston.
 疑问词：inflows, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -4707,7 +4707,7 @@
 346.Give me all members of The Who.
 疑问词：members, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -4720,7 +4720,7 @@
 347.Give me all soccer clubs in Qatar.
 疑问词：clubs, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -4733,7 +4733,7 @@
 348.Give me all video games published by Black Isle Studios.
 疑问词：games, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -4749,7 +4749,7 @@
 349.Give me the children of David Foster.
 疑问词：children, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -4762,7 +4762,7 @@
 350.Give me the homepage of Metropolitan Home.
 疑问词：homepage, 词性：NN
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -4775,7 +4775,7 @@
 351.How big is the Mammoth Pool Reservoir?
 疑问词：big, 词性：JJ
 句型词： How, 词性： WRB
-依赖路径：
+依赖路径：['advmod：<--']
 依赖结构：
 (advmod: ['big', 'How'])
 (root: ['big', 'big'])
@@ -4788,7 +4788,7 @@
 352.How deep is Steinsee?
 疑问词：deep, 词性：JJ
 句型词： How, 词性： WRB
-依赖路径：
+依赖路径：['advmod：<--']
 依赖结构：
 (advmod: ['deep', 'How'])
 (root: ['deep', 'deep'])
@@ -4798,7 +4798,7 @@
 353.How high is the Doe Hill Mountain?
 疑问词：high, 词性：JJ
 句型词： How, 词性： WRB
-依赖路径：
+依赖路径：['advmod：<--']
 依赖结构：
 (advmod: ['high', 'How'])
 (root: ['high', 'high'])
@@ -4811,7 +4811,7 @@
 354.How high is the Volcano Mountain?
 疑问词：high, 词性：JJ
 句型词： How, 词性： WRB
-依赖路径：
+依赖路径：['advmod：<--']
 依赖结构：
 (advmod: ['high', 'How'])
 (root: ['high', 'high'])
@@ -4823,7 +4823,7 @@
 355.How high is the Landegode Lighthouse?
 疑问词：high, 词性：JJ
 句型词： How, 词性： WRB
-依赖路径：
+依赖路径：['advmod：<--']
 依赖结构：
 (advmod: ['high', 'How'])
 (root: ['high', 'high'])
@@ -4969,7 +4969,7 @@
 366.How often did Teresa Mo marry?
 疑问词：often, 词性：RB
 句型词： How, 词性： WRB
-依赖路径：
+依赖路径：['advmod：<--']
 依赖结构：
 (advmod: ['often', 'How'])
 (advmod: ['marry', 'often'])
@@ -4981,7 +4981,7 @@
 367.How tall is John Windsor?
 疑问词：tall, 词性：JJ
 句型词： How, 词性： WRB
-依赖路径：
+依赖路径：['advmod：<--']
 依赖结构：
 (advmod: ['tall', 'How'])
 (root: ['tall', 'tall'])
@@ -4992,7 +4992,7 @@
 368.How tall is Kate Upton?
 疑问词：tall, 词性：JJ
 句型词： How, 词性： WRB
-依赖路径：
+依赖路径：['advmod：<--']
 依赖结构：
 (advmod: ['tall', 'How'])
 (amod: ['Kate', 'tall'])
@@ -5003,7 +5003,7 @@
 369.In which country is Solaize located?
 疑问词：country, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['country', 'In'])
 (det: ['country', 'which'])
@@ -5015,7 +5015,7 @@
 370.In which country is the Tasman Lake?
 疑问词：country, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['country', 'In'])
 (det: ['country', 'which'])
@@ -5028,7 +5028,7 @@
 371.In which country is the Tiefer See?
 疑问词：country, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['country', 'In'])
 (det: ['country', 'which'])
@@ -5041,7 +5041,7 @@
 372.In which programming language is QuickTime written?
 疑问词：language, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['language', 'In'])
 (det: ['language', 'which'])
@@ -5069,7 +5069,7 @@
 374.What are the official languages of Tunisia?
 疑问词：languages, 词性：NNS
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'are'])
@@ -5082,7 +5082,7 @@
 375.What is the area code of Aegina?
 疑问词：code, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -5095,7 +5095,7 @@
 376.What is the capital of Venezuela?
 疑问词：capital, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -5107,7 +5107,7 @@
 377.What is the currency of Rhodesia?
 疑问词：currency, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -5119,7 +5119,7 @@
 378.What is the eye color of Liza Kennedy?
 疑问词：color, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -5133,7 +5133,7 @@
 379.What is the hair color of Marlon Teixeira?
 疑问词：color, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -5147,7 +5147,7 @@
 380.What is the official color of the Carleton University?
 疑问词：color, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -5162,7 +5162,7 @@
 381.What is the ruling party in Lo Espejo?
 疑问词：party, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -5294,7 +5294,7 @@
 392.Which airports are located in Chios?
 疑问词：airports, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['airports', 'Which'])
 (nsubj:pass: ['located', 'airports'])
@@ -5306,7 +5306,7 @@
 393.Which artist made the album Old School Prankstas?
 疑问词：artist, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['artist', 'Which'])
 (nsubj: ['made', 'artist'])
@@ -5320,7 +5320,7 @@
 394.Which books were published by DAW Books?
 疑问词：books, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['books', 'Which'])
 (nsubj:pass: ['published', 'books'])
@@ -5333,7 +5333,7 @@
 395.Which bridges cross the Prut?
 疑问词：bridges, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['bridges', 'Which'])
 (nsubj: ['cross', 'bridges'])
@@ -5344,7 +5344,7 @@
 396.Which instruments does Courtney Love play?
 疑问词：instruments, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['instruments', 'Which'])
 (obj: ['play', 'instruments'])
@@ -5356,7 +5356,7 @@
 397.Which languages are spoken in Romania?
 疑问词：languages, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['languages', 'Which'])
 (nsubj: ['spoken', 'languages'])
@@ -5368,7 +5368,7 @@
 398.Which museum exhibits The Skater?
 疑问词：museum, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['museum', 'Which'])
 (nsubj: ['exhibits', 'museum'])
@@ -5379,7 +5379,7 @@
 399.Which music albums contain the song Into Your Arms?
 疑问词：albums, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['albums', 'Which'])
 (compound: ['albums', 'music'])
@@ -5394,7 +5394,7 @@
 400.Which organizations were founded in 1918?
 疑问词：organizations, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['organizations', 'Which'])
 (nsubj:pass: ['founded', 'organizations'])
@@ -5406,7 +5406,7 @@
 401.Which presidents were born in 1891?
 疑问词：presidents, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['presidents', 'Which'])
 (nsubj:pass: ['born', 'presidents'])
@@ -5418,7 +5418,7 @@
 402.Which professional surfers were born in Australia?
 疑问词：surfers, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['surfers', 'Which'])
 (amod: ['surfers', 'professional'])
@@ -5506,7 +5506,7 @@
 410.Who is the editor of Semana?
 疑问词：editor, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['editor', 'Who'])
 (cop: ['editor', 'is'])
@@ -5518,7 +5518,7 @@
 411.Who is the founder of DC Comics?
 疑问词：founder, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['founder', 'Who'])
 (cop: ['founder', 'is'])
@@ -5531,7 +5531,7 @@
 412.Who is the heaviest player of the ASK Riga?
 疑问词：player, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['player', 'Who'])
 (cop: ['player', 'is'])
@@ -5546,7 +5546,7 @@
 413.Who is the manager of Gazelle FC?
 疑问词：manager, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['manager', 'Who'])
 (cop: ['manager', 'is'])
@@ -5559,7 +5559,7 @@
 414.Who is the mayor of Virar?
 疑问词：mayor, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['mayor', 'Who'])
 (cop: ['mayor', 'is'])
@@ -5571,7 +5571,7 @@
 415.Who is the mayor of the capital of New Caledonia?
 疑问词：mayor, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['mayor', 'Who'])
 (cop: ['mayor', 'is'])
@@ -5587,7 +5587,7 @@
 416.Who is the owner of Mazda?
 疑问词：owner, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['owner', 'Who'])
 (cop: ['owner', 'is'])
@@ -5599,7 +5599,7 @@
 417.Who is the tallest player of Udinese Calcio?
 疑问词：player, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['player', 'Who'])
 (cop: ['player', 'is'])
@@ -5613,7 +5613,7 @@
 418.Who is the youngest Snooker player?
 疑问词：player, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['player', 'Who'])
 (cop: ['player', 'is'])
@@ -5648,7 +5648,7 @@
 421.Who were the parents of Maria of Antioch?
 疑问词：parents, 词性：NNS
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['parents', 'Who'])
 (cop: ['parents', 'were'])
@@ -5676,7 +5676,7 @@
 423.Who are the presidents of the United States?
 疑问词：presidents, 词性：NNS
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['Who', 'Who'])
 (cop: ['Who', 'are'])
@@ -5690,7 +5690,7 @@
 424.Who has been the 5th president of the United States of America?
 疑问词：president, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['president', 'Who'])
 (aux: ['president', 'has'])
@@ -5708,7 +5708,7 @@
 425.Give me all female German chancellors!
 疑问词：chancellors, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -5732,7 +5732,7 @@
 427.Which people were born in Heraklion?
 疑问词：people, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['people', 'Which'])
 (nsubj:pass: ['born', 'people'])
@@ -5744,7 +5744,7 @@
 428.Which actors were born in Germany?
 疑问词：actors, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['actors', 'Which'])
 (nsubj:pass: ['born', 'actors'])
@@ -5756,7 +5756,7 @@
 429.Which companies work in the aerospace industry as well as on nuclear reactor technology?
 疑问词：companies, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['companies', 'Which'])
 (nsubj: ['work', 'companies'])
@@ -5776,7 +5776,7 @@
 430.Which people have as their given name Jimmy?
 疑问词：people, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['people', 'Which'])
 (nsubj: ['have', 'people'])
@@ -5804,7 +5804,7 @@
 432.Who was the wife of President Lincoln?
 疑问词：wife, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['wife', 'Who'])
 (cop: ['wife', 'was'])
@@ -5817,7 +5817,7 @@
 433.Which presidents were born in 1945?
 疑问词：presidents, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['presidents', 'Which'])
 (nsubj:pass: ['born', 'presidents'])
@@ -5829,7 +5829,7 @@
 434.Which caves have more than 3 entrances?
 疑问词：caves, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['caves', 'Which'])
 (nsubj: ['have', 'caves'])
@@ -5842,7 +5842,7 @@
 435.Which cities have more than 2 million inhabitants?
 疑问词：cities, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['cities', 'Which'])
 (nsubj: ['have', 'cities'])
@@ -5865,7 +5865,7 @@
 437.Which capitals in Europe were host cities of the summer olympic games?
 疑问词：capitals, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['capitals', 'Which'])
 (nsubj: ['cities', 'capitals'])
@@ -5883,7 +5883,7 @@
 438.Give me all soccer clubs in the Premier League.
 疑问词：clubs, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -5898,7 +5898,7 @@
 439.In which programming language is GIMP written?
 疑问词：language, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['language', 'In'])
 (det: ['language', 'which'])
@@ -5911,7 +5911,7 @@
 440.What languages are spoken in Estonia?
 疑问词：languages, 词性：NNS
 句型词： What, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['languages', 'What'])
 (nsubj: ['spoken', 'languages'])
@@ -5933,7 +5933,7 @@
 442.Which country does the Airedale Terrier come from?
 疑问词：country, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['country', 'Which'])
 (nsubj: ['does', 'country'])
@@ -5947,7 +5947,7 @@
 443.What is the highest mountain?
 疑问词：mountain, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -5958,7 +5958,7 @@
 444.Which birds are there in the United States?
 疑问词：birds, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['birds', 'Which'])
 (nsubj: ['there', 'birds'])
@@ -5972,7 +5972,7 @@
 445.Give me all school types.
 疑问词：types, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -5983,7 +5983,7 @@
 446.Which organizations were founded in 1950?
 疑问词：organizations, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['organizations', 'Which'])
 (nsubj:pass: ['founded', 'organizations'])
@@ -5995,7 +5995,7 @@
 447.Which genre does DBpedia belong to?
 疑问词：genre, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['genre', 'Which'])
 (obl: ['belong', 'genre'])
@@ -6027,7 +6027,7 @@
 450.Which companies are located in California, USA?
 疑问词：companies, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['companies', 'Which'])
 (nsubj:pass: ['located', 'companies'])
@@ -6040,7 +6040,7 @@
 451.What is the official website of Tom Hanks?
 疑问词：website, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -6079,7 +6079,7 @@
 454.Which music albums contain the song Last Christmas?
 疑问词：albums, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['albums', 'Which'])
 (compound: ['albums', 'music'])
@@ -6093,7 +6093,7 @@
 455.Give me all films produced by Hal Roach.
 疑问词：films, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -6107,7 +6107,7 @@
 456.Give me all actors starring in Batman Begins.
 疑问词：actors, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -6121,7 +6121,7 @@
 457.Give me all movies with Tom Cruise!
 疑问词：movies, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -6134,7 +6134,7 @@
 458.List all episodes of the first season of the HBO television series The Sopranos!
 疑问词：episodes, 词性：NNS
 句型词：List, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['List', 'List'])
 (det: ['episodes', 'all'])
@@ -6154,7 +6154,7 @@
 459.Which books were written by Danielle Steel?
 疑问词：books, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['books', 'Which'])
 (nsubj:pass: ['written', 'books'])
@@ -6182,7 +6182,7 @@
 461.Which mountains are higher than the Nanga Parbat?
 疑问词：mountains, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['mountains', 'Which'])
 (nsubj: ['higher', 'mountains'])
@@ -6206,7 +6206,7 @@
 463.Which software has been published by Mean Hamster Software?
 疑问词：software, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['software', 'Which'])
 (nsubj:pass: ['published', 'software'])
@@ -6221,7 +6221,7 @@
 464.Which software has been developed by organizations founded in California?
 疑问词：software, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['software', 'Which'])
 (nsubj:pass: ['developed', 'software'])
@@ -6237,7 +6237,7 @@
 465.Which country has the most official languages?
 疑问词：country, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['country', 'Which'])
 (nsubj: ['has', 'country'])
@@ -6250,7 +6250,7 @@
 466.Give me all European Capitals!
 疑问词：Capitals, 词性：NNPS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -6273,7 +6273,7 @@
 468.In which films did Julia Roberts as well as Richard Gere play?
 疑问词：films, 词性：NNS
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['films', 'In'])
 (det: ['films', 'which'])
@@ -6291,7 +6291,7 @@
 469.Give me the websites of companies with more than 500000 employees.
 疑问词：websites, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -6308,7 +6308,7 @@
 470.Give me all female Russian astronauts.
 疑问词：astronauts, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -6320,7 +6320,7 @@
 471.Give me the birthdays of all actors of the television show Charmed.
 疑问词：birthdays, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -6338,7 +6338,7 @@
 472.Which countries have places with more than two caves?
 疑问词：countries, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['countries', 'Which'])
 (nsubj: ['have', 'countries'])
@@ -6353,7 +6353,7 @@
 473.Give me the capitals of all countries in Africa.
 疑问词：capitals, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -6390,7 +6390,7 @@
 476.Which European countries have a constitutional monarchy?
 疑问词：countries, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['countries', 'Which'])
 (amod: ['countries', 'European'])
@@ -6403,7 +6403,7 @@
 477.Which awards did WikiLeaks win?
 疑问词：awards, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['awards', 'Which'])
 (obj: ['win', 'awards'])
@@ -6414,7 +6414,7 @@
 478.Which state of the USA has the highest population density?
 疑问词：state, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['state', 'Which'])
 (nsubj: ['has', 'state'])
@@ -6442,7 +6442,7 @@
 480.What is the highest mountain in Australia?
 疑问词：mountain, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -6455,7 +6455,7 @@
 481.Give me all companies in the advertising industry.
 疑问词：companies, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -6469,7 +6469,7 @@
 482.Give me all presidents of the United States.
 疑问词：presidents, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -6483,7 +6483,7 @@
 483.Who was the wife of U.S. president Lincoln?
 疑问词：wife, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['wife', 'Who'])
 (cop: ['wife', 'was'])
@@ -6497,7 +6497,7 @@
 484.What is the official website of Tom Cruise?
 疑问词：website, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -6511,7 +6511,7 @@
 485.Give me all people with first name Jimmy.
 疑问词：people, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -6534,7 +6534,7 @@
 487.Give me all video games published by Mean Hamster Software.
 疑问词：games, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -6550,7 +6550,7 @@
 488.Which languages are spoken in Estonia?
 疑问词：languages, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['languages', 'Which'])
 (nsubj: ['spoken', 'languages'])
@@ -6575,7 +6575,7 @@
 490.Give me all books written by Danielle Steel.
 疑问词：books, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -6589,7 +6589,7 @@
 491.Which airports are located in California, USA?
 疑问词：airports, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['airports', 'Which'])
 (nsubj:pass: ['located', 'airports'])
@@ -6615,7 +6615,7 @@
 493.Give me all movies with Tom Cruise.
 疑问词：movies, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -6628,7 +6628,7 @@
 494.Give me all female German chancellors.
 疑问词：chancellors, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -6640,7 +6640,7 @@
 495.Which budget did the first movie of Zdenek Sverak have?
 疑问词：budget, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['budget', 'Which'])
 (nsubj: ['did', 'budget'])
@@ -6672,7 +6672,7 @@
 497.How often was Michael Jordan divorced?
 疑问词：often, 词性：RB
 句型词： How, 词性： WRB
-依赖路径：
+依赖路径：['advmod：<--']
 依赖结构：
 (advmod: ['often', 'How'])
 (root: ['often', 'often'])
@@ -6684,7 +6684,7 @@
 498.What is the most beautiful painting?
 疑问词：painting, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -6749,7 +6749,7 @@
 502.In which city did John F. Kennedy die?
 疑问词：city, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['city', 'In'])
 (det: ['city', 'which'])
@@ -6763,7 +6763,7 @@
 503.Which classis do tree frogs belong to?
 疑问词：classis, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['classis', 'Which'])
 (obl: ['belong', 'classis'])
@@ -6788,7 +6788,7 @@
 505.Give me all actors starring in Last Action Hero.
 疑问词：actors, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -6818,7 +6818,7 @@
 507.Give me all cosmonauts.
 疑问词：cosmonauts, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -6841,7 +6841,7 @@
 509.In which U.S. state is Mount McKinley located?
 疑问词：state, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['which', 'In'])
 (det: ['state', 'which'])
@@ -6855,7 +6855,7 @@
 510.Which countries have more than ten caves?
 疑问词：countries, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['countries', 'Which'])
 (nsubj: ['have', 'countries'])
@@ -6868,7 +6868,7 @@
 511.Give me all communist countries.
 疑问词：countries, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -6879,7 +6879,7 @@
 512.Which U.S. state has the highest population density?
 疑问词：state, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['state', 'Which'])
 (compound: ['state', 'U.S.'])
@@ -6893,7 +6893,7 @@
 513.Which countries adopted the Euro?
 疑问词：countries, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['countries', 'Which'])
 (nsubj: ['adopted', 'countries'])
@@ -6904,7 +6904,7 @@
 514.Which monarchs were married to a German?
 疑问词：monarchs, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['monarchs', 'Which'])
 (nsubj:pass: ['married', 'monarchs'])
@@ -6917,7 +6917,7 @@
 515.What is the official language of Suriname?
 疑问词：language, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -6930,7 +6930,7 @@
 516.Who is the mayor of Tel Aviv?
 疑问词：mayor, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['mayor', 'Who'])
 (cop: ['mayor', 'is'])
@@ -6943,7 +6943,7 @@
 517.What is the highest place of the Urals?
 疑问词：place, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -6957,7 +6957,7 @@
 518.Who is the editor of Forbes?
 疑问词：editor, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['editor', 'Who'])
 (cop: ['editor', 'is'])
@@ -6969,7 +6969,7 @@
 519.Give me all libraries established earlier than 1400.
 疑问词：libraries, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -6983,7 +6983,7 @@
 520.Give me all federal chancellors of Germany.
 疑问词：chancellors, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -6996,7 +6996,7 @@
 521.List all episodes of the first season of the HBO television series The Sopranos.
 疑问词：episodes, 词性：NNS
 句型词：List, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['List', 'List'])
 (det: ['episodes', 'all'])
@@ -7016,7 +7016,7 @@
 522.Which companies work in the aerospace industry as well as in medicine?
 疑问词：companies, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['companies', 'Which'])
 (nsubj: ['work', 'companies'])
@@ -7046,7 +7046,7 @@
 524.Who was the first president of the United States?
 疑问词：president, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['president', 'Who'])
 (cop: ['president', 'was'])
@@ -7061,7 +7061,7 @@
 525.Give me all female given names.
 疑问词：names, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -7088,7 +7088,7 @@
 527.Which organizations were founded in 1930?
 疑问词：organizations, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['organizations', 'Which'])
 (nsubj:pass: ['founded', 'organizations'])
@@ -7100,7 +7100,7 @@
 528.Who was John F. Kennedy's vice president?
 疑问词：president, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['president', 'Who'])
 (cop: ['president', 'was'])
@@ -7114,7 +7114,7 @@
 529.Give me a list of all bandleaders that play trumpet.
 疑问词：list, 词性：NN
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -7148,7 +7148,7 @@
 531.What were the main discoveries of the Mars rover Curiosity?
 疑问词：discoveries, 词性：NNS
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'were'])
@@ -7177,7 +7177,7 @@
 533.Give me all actors starring in movies directed by William Shatner.
 疑问词：actors, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -7194,7 +7194,7 @@
 534.Give me all Methodist politicians.
 疑问词：politicians, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -7205,7 +7205,7 @@
 535.How often did Jane Fonda marry?
 疑问词：often, 词性：RB
 句型词： How, 词性： WRB
-依赖路径：
+依赖路径：['advmod：<--']
 依赖结构：
 (advmod: ['often', 'How'])
 (advmod: ['marry', 'often'])
@@ -7217,7 +7217,7 @@
 536.Give me all islands that belong to Japan.
 疑问词：islands, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -7231,7 +7231,7 @@
 537.Give me all Apollo 14 astronauts.
 疑问词：astronauts, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -7243,7 +7243,7 @@
 538.Which U.S. states are in the same time zone as Utah?
 疑问词：states, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['states', 'Which'])
 (compound: ['states', 'U.S.'])
@@ -7260,7 +7260,7 @@
 539.Give me all Danish films.
 疑问词：films, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -7271,7 +7271,7 @@
 540.Which instruments does Cat Stevens play?
 疑问词：instruments, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['instruments', 'Which'])
 (obj: ['play', 'instruments'])
@@ -7283,7 +7283,7 @@
 541.Which Chess players died in the same place they were born in?
 疑问词：players, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['players', 'Which'])
 (compound: ['players', 'Chess'])
@@ -7316,7 +7316,7 @@
 543.In which country does the Ganges start?
 疑问词：country, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (mark: ['does', 'In'])
 (det: ['country', 'which'])
@@ -7343,7 +7343,7 @@
 545.Which awards did Douglas Hofstadter win?
 疑问词：awards, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['awards', 'Which'])
 (obj: ['win', 'awards'])
@@ -7355,7 +7355,7 @@
 546.Who is the owner of Rolls-Royce?
 疑问词：owner, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['owner', 'Who'])
 (cop: ['owner', 'is'])
@@ -7369,7 +7369,7 @@
 547.Who was the 16th president of the United States?
 疑问词：president, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['president', 'Who'])
 (cop: ['president', 'was'])
@@ -7415,7 +7415,7 @@
 550.Give me all Danish movies.
 疑问词：movies, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -7438,7 +7438,7 @@
 552.Which movies did Kurosawa direct?
 疑问词：movies, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['movies', 'Which'])
 (obj: ['direct', 'movies'])
@@ -7449,7 +7449,7 @@
 553.What is the most frequent cause of death?
 疑问词：cause, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -7463,7 +7463,7 @@
 554.Which rockets were launched from Baikonur?
 疑问词：rockets, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['rockets', 'Which'])
 (nsubj:pass: ['launched', 'rockets'])
@@ -7486,7 +7486,7 @@
 556.Which companies have more than 1 million employees?
 疑问词：companies, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['companies', 'Which'])
 (nsubj: ['have', 'companies'])
@@ -7500,7 +7500,7 @@
 557.Give all swimmers that were born in Moscow.
 疑问词：swimmers, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (det: ['swimmers', 'all'])
@@ -7524,7 +7524,7 @@
 559.Show me the book that Muhammad Ali wrote.
 疑问词：book, 词性：NN
 句型词：Show, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Show', 'Show'])
 (iobj: ['Show', 'me'])
@@ -7550,7 +7550,7 @@
 561.Which city has the most inhabitants?
 疑问词：city, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['city', 'Which'])
 (nsubj: ['has', 'city'])
@@ -7562,7 +7562,7 @@
 562.Which city has the least inhabitants?
 疑问词：city, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['city', 'Which'])
 (nsubj: ['has', 'city'])
@@ -7574,7 +7574,7 @@
 563.Give me all the TV shows with Neil Patrick Harris.
 疑问词：shows, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -7601,7 +7601,7 @@
 565.Show a list of soccer clubs that play in the Bundesliga.
 疑问词：list, 词性：NN
 句型词：Show, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Show', 'Show'])
 (det: ['list', 'a'])
@@ -7618,7 +7618,7 @@
 566.What country is Mount Everest in?
 疑问词：country, 词性：NN
 句型词： What, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['country', 'What'])
 (root: ['country', 'country'])
@@ -7630,7 +7630,7 @@
 567.Who is the founder of Penguin Books?
 疑问词：founder, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['founder', 'Who'])
 (cop: ['founder', 'is'])
@@ -7643,7 +7643,7 @@
 568.Which programming languages influenced Javascript?
 疑问词：languages, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['languages', 'Which'])
 (compound: ['languages', 'programming'])
@@ -7654,7 +7654,7 @@
 569.List all the musicals with music by Elton John.
 疑问词：musicals, 词性：NNS
 句型词：List, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['List', 'List'])
 (det:predet: ['musicals', 'all'])
@@ -7728,7 +7728,7 @@
 575.Which book has the most pages?
 疑问词：book, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['book', 'Which'])
 (nsubj: ['has', 'book'])
@@ -7740,7 +7740,7 @@
 576.Which bridges cross the Seine?
 疑问词：bridges, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['bridges', 'Which'])
 (nsubj: ['cross', 'bridges'])
@@ -7751,7 +7751,7 @@
 577.Who is the mayor of the capital of French Polynesia?
 疑问词：mayor, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['mayor', 'Who'])
 (cop: ['mayor', 'is'])
@@ -7779,7 +7779,7 @@
 579.What is the location of the Houses of Parliament?
 疑问词：location, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -7794,7 +7794,7 @@
 580.Who was the pope that founded the Vatican Television?
 疑问词：pope, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['pope', 'Who'])
 (cop: ['pope', 'was'])
@@ -7809,7 +7809,7 @@
 581.What airlines are part of the SkyTeam alliance?
 疑问词：airlines, 词性：NNS
 句型词： What, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['airlines', 'What'])
 (nsubj: ['part', 'airlines'])
@@ -7823,7 +7823,7 @@
 582.What is the total population of Melbourne, Florida?
 疑问词：population, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -7837,7 +7837,7 @@
 583.Which airports does Air China serve?
 疑问词：airports, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['airports', 'Which'])
 (obj: ['serve', 'airports'])
@@ -7849,7 +7849,7 @@
 584.In which year was Rachel Stevens born?
 疑问词：year, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['year', 'In'])
 (det: ['year', 'which'])
@@ -7885,7 +7885,7 @@
 587.Which scientist is known for the Manhattan Project and the Nobel Peace Prize?
 疑问词：scientist, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['scientist', 'Which'])
 (nsubj:pass: ['known', 'scientist'])
@@ -7904,7 +7904,7 @@
 588.What is the highest volcano in Africa?
 疑问词：volcano, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -7917,7 +7917,7 @@
 589.Which beer originated in Ireland?
 疑问词：beer, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['beer', 'Which'])
 (nsubj: ['originated', 'beer'])
@@ -7928,7 +7928,7 @@
 590.What are the specialities of the UNC Health Care?
 疑问词：specialities, 词性：NNS
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'are'])
@@ -7943,7 +7943,7 @@
 591.Who is the owner of Facebook?
 疑问词：owner, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['owner', 'Who'])
 (cop: ['owner', 'is'])
@@ -7955,7 +7955,7 @@
 592.From which region is the Melon de Bourgogne?
 疑问词：region, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['region', 'From'])
 (det: ['region', 'which'])
@@ -7980,7 +7980,7 @@
 594.Who was president of Pakistan in 1978?
 疑问词：president, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['president', 'Who'])
 (cop: ['president', 'was'])
@@ -7993,7 +7993,7 @@
 595.Give me English actors starring in Lovesick.
 疑问词：actors, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -8006,7 +8006,7 @@
 596.Give me all types of eating disorders.
 疑问词：types, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -8031,7 +8031,7 @@
 598.What is the largest metropolitan area in Washington state?
 疑问词：area, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -8070,7 +8070,7 @@
 601.What is the timezone in San Pedro de Atacama?
 疑问词：timezone, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -8085,7 +8085,7 @@
 602.In which city does the Chile Route 68 end?
 疑问词：city, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['city', 'In'])
 (det: ['city', 'which'])
@@ -8100,7 +8100,7 @@
 603.Who was vice president under the president who authorized atomic weapons against Japan during World War II?
 疑问词：president, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['president', 'Who'])
 (cop: ['president', 'was'])
@@ -8123,7 +8123,7 @@
 604.In which town was the assassin of Martin Luther King born?
 疑问词：town, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['town', 'In'])
 (det: ['town', 'which'])
@@ -8140,7 +8140,7 @@
 605.Which anti-apartheid activist was born in Mvezo?
 疑问词：activist, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['activist', 'Which'])
 (amod: ['activist', 'anti-apartheid'])
@@ -8171,7 +8171,7 @@
 607.Which recipients of the Victoria Cross died in the Battle of Arnhem?
 疑问词：recipients, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['recipients', 'Which'])
 (nsubj: ['died', 'recipients'])
@@ -8203,7 +8203,7 @@
 609.How old was Steve Jobs' sister when she first met him?
 疑问词：old, 词性：JJ
 句型词： How, 词性： WRB
-依赖路径：
+依赖路径：['advmod：<--']
 依赖结构：
 (advmod: ['old', 'How'])
 (nsubj: ['was', 'old'])
@@ -8221,7 +8221,7 @@
 610.Which members of the Wu-Tang Clan took their stage name from a movie?
 疑问词：members, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['members', 'Which'])
 (nsubj: ['took', 'members'])
@@ -8240,7 +8240,7 @@
 611.Which writers had influenced the philosopher that refused a Nobel Prize?
 疑问词：writers, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['writers', 'Which'])
 (nsubj: ['influenced', 'writers'])
@@ -8313,7 +8313,7 @@
 615.On which island did the national poet of Greece die?
 疑问词：island, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['island', 'On'])
 (det: ['island', 'which'])
@@ -8329,7 +8329,7 @@
 616.Which horses did The Long Fellow ride?
 疑问词：horses, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['horses', 'Which'])
 (nsubj: ['did', 'horses'])
@@ -8363,7 +8363,7 @@
 618.Which building owned by the Bank of America was featured in the TV series MegaStructures?
 疑问词：building, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['building', 'Which'])
 (nsubj:pass: ['featured', 'building'])
@@ -8384,7 +8384,7 @@
 619.Which buildings in art deco style did Shreve, Lamb and Harmon design?
 疑问词：buildings, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['buildings', 'Which'])
 (nsubj: ['did', 'buildings'])
@@ -8402,7 +8402,7 @@
 620.Which birds are protected under the National Parks and Wildlife Act?
 疑问词：birds, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['birds', 'Which'])
 (nsubj:pass: ['protected', 'birds'])
@@ -8419,7 +8419,7 @@
 621.Which country did the first known photographer of snowflakes come from?
 疑问词：country, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['country', 'Which'])
 (nsubj: ['did', 'country'])
@@ -8436,7 +8436,7 @@
 622.List all the battles commanded by the lover of Cleopatra.
 疑问词：battles, 词性：NNS
 句型词：List, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['List', 'List'])
 (det:predet: ['battles', 'all'])
@@ -8452,7 +8452,7 @@
 623.Which actress starring in the TV series Friends owns the production company Coquette Productions?
 疑问词：actress, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['actress', 'Which'])
 (nsubj: ['owns', 'actress'])
@@ -8506,7 +8506,7 @@
 626.Which street basketball player was diagnosed with Sarcoidosis?
 疑问词：player, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['player', 'Which'])
 (compound: ['basketball', 'street'])
@@ -8520,7 +8520,7 @@
 627.For which movie did the daughter of Francis Ford Coppola receive an Oscar?
 疑问词：movie, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['movie', 'For'])
 (det: ['movie', 'which'])
@@ -8539,7 +8539,7 @@
 628.Which city does the first person to climb all 14 eight-thousanders come from?
 疑问词：city, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['city', 'Which'])
 (nsubj: ['does', 'city'])
@@ -8560,7 +8560,7 @@
 629.At which college did the only American actor that received the C  sar Award study?
 疑问词：college, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['college', 'At'])
 (det: ['college', 'which'])
@@ -8581,7 +8581,7 @@
 630.How old is James Bond in the latest Bond book by William Boyd?
 疑问词：old, 词性：JJ
 句型词： How, 词性： WRB
-依赖路径：
+依赖路径：['advmod：<--']
 依赖结构：
 (advmod: ['old', 'How'])
 (root: ['old', 'old'])
@@ -8600,7 +8600,7 @@
 631.What eating disorder is characterized by an appetite for substances such as clay and sand?
 疑问词：disorder, 词性：NN
 句型词： What, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['disorder', 'What'])
 (compound: ['disorder', 'eating'])
@@ -8621,7 +8621,7 @@
 632.What is the native city of Hollywood's highest-paid actress?
 疑问词：city, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -8639,7 +8639,7 @@
 633.In which city does the former main presenter of the Xpos   girls live?
 疑问词：city, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['city', 'In'])
 (det: ['city', 'which'])
@@ -8682,7 +8682,7 @@
 635.Who is the front man of the band that wrote Coffee & TV?
 疑问词：man, 词性：NN
 句型词： Who, 词性： WP
-依赖路径：
+依赖路径：['nsubj：<--']
 依赖结构：
 (nsubj: ['man', 'Who'])
 (cop: ['man', 'is'])
@@ -8701,7 +8701,7 @@
 636.Which Chinese-speaking country is a former Portguese colony?
 疑问词：country, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['country', 'Which'])
 (amod: ['speaking', 'Chinese'])
@@ -8717,7 +8717,7 @@
 637.What is the largest city in the county in which Faulkner spent most of his life?
 疑问词：city, 词性：NN
 句型词： What, 词性： WP
-依赖路径：
+依赖路径：['nsubj：-->']
 依赖结构：
 (root: ['What', 'What'])
 (cop: ['What', 'is'])
@@ -8739,7 +8739,7 @@
 638.In which year did the Hungarian-American actor called "The King of Horror" make his first film?
 疑问词：year, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['year', 'In'])
 (det: ['year', 'which'])
@@ -8765,7 +8765,7 @@
 639.Under which pseudonym did Charles Dickens publish some of his books?
 疑问词：pseudonym, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (case: ['pseudonym', 'Under'])
 (det: ['pseudonym', 'which'])
@@ -8782,7 +8782,7 @@
 640.A landmark of which city is the home of the Mona Lisa?
 疑问词：city, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['landmark', 'A'])
 (root: ['landmark', 'landmark'])
@@ -8800,7 +8800,7 @@
 641.How tall is Amazon Eve?
 疑问词：tall, 词性：JJ
 句型词： How, 词性： WRB
-依赖路径：
+依赖路径：['advmod：<--']
 依赖结构：
 (advmod: ['tall', 'How'])
 (root: ['tall', 'tall'])
@@ -8811,7 +8811,7 @@
 642.Which politicians were married to a German?
 疑问词：politicians, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['politicians', 'Which'])
 (nsubj:pass: ['married', 'politicians'])
@@ -8835,7 +8835,7 @@
 644.Butch Otter is the governor of which U.S. state?
 疑问词：state, 词性：NN
 句型词：which, 词性：WDT
-依赖路径：
+依赖路径：['obl：<--']
 依赖结构：
 (nsubj: ['governor', 'Butch'])
 (flat: ['Butch', 'Otter'])
@@ -8850,7 +8850,7 @@
 645.Which weapons did Heckler & Koch develop?
 疑问词：weapons, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['weapons', 'Which'])
 (obj: ['develop', 'weapons'])
@@ -8894,7 +8894,7 @@
 649.Give me the grandchildren of Elvis Presley.
 疑问词：grandchildren, 词性：NNS
 句型词：Give, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Give', 'Give'])
 (iobj: ['Give', 'me'])
@@ -8907,7 +8907,7 @@
 650.How deep is Lake Chiemsee?
 疑问词：deep, 词性：JJ
 句型词： How, 词性： WRB
-依赖路径：
+依赖路径：['advmod：<--']
 依赖结构：
 (advmod: ['deep', 'How'])
 (root: ['deep', 'deep'])
@@ -8929,7 +8929,7 @@
 652.List all the musicals with music by Leonard Bernstein.
 疑问词：musicals, 词性：NNS
 句型词：List, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['List', 'List'])
 (det:predet: ['musicals', 'all'])
@@ -8944,7 +8944,7 @@
 653.Show me all the breweries in Australia.
 疑问词：breweries, 词性：NNS
 句型词：Show, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Show', 'Show'])
 (iobj: ['Show', 'me'])
@@ -8957,7 +8957,7 @@
 654.Show me all English Gothic buildings in Kent.
 疑问词：buildings, 词性：NNS
 句型词：Show, 词性：VB
-依赖路径：
+依赖路径：['obj：-->']
 依赖结构：
 (root: ['Show', 'Show'])
 (iobj: ['Show', 'me'])
@@ -8971,7 +8971,7 @@
 655.Which airports does Yeti Airlines serve?
 疑问词：airports, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['airports', 'Which'])
 (obj: ['serve', 'airports'])
@@ -8983,7 +8983,7 @@
 656.Which movies starring Mickey Rourke were directed by Guy Ritchie?
 疑问词：movies, 词性：NNS
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['movies', 'Which'])
 (nsubj:pass: ['directed', 'movies'])
@@ -8999,7 +8999,7 @@
 657.Which subsidiary of TUI Travel serves both Glasgow and Dublin?
 疑问词：subsidiary, 词性：NN
 句型词： Which, 词性： WDT
-依赖路径：
+依赖路径：['det：<--']
 依赖结构：
 (det: ['subsidiary', 'Which'])
 (nsubj: ['serves', 'subsidiary'])
@@ -9027,7 +9027,7 @@
 659.How high is the lighthouse in Colombo?
 疑问词：high, 词性：JJ
 句型词： How, 词性： WRB
-依赖路径：
+依赖路径：['advmod：<--']
 依赖结构：
 (advmod: ['high', 'How'])
 (root: ['high', 'high'])

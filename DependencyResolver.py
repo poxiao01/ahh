@@ -83,8 +83,10 @@ class DependencyResolver:
         if word == target_word:
             return ''
         for ration, words in self.dependency_relations:
-            if words[0] == word and words[1] == target_word or words[0] == target_word and words[1] == word:
-                return ''
+            if words[0] == word and words[1] == target_word:
+                return [f'{ration}：-->']
+            if words[0] == target_word and words[1] == word:
+                return [f'{ration}：<--']
 
         self.used_word[word] = True
         self.find_dependency_paths(word, target_word, [])
