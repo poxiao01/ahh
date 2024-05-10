@@ -75,6 +75,7 @@ def extract_dependency_structure(sentences_list):
         words_structure = ''
         for sent in doc.sentences:
             for word in sent.words:
+                print(word)
                 head_word = sent.words[word.head - 1].text if word.head > 0 else word.text
                 dependency_relations.append((word.deprel, [head_word, word.text]))
                 words_pos.append((word.text, word.xpos, word.upos))
@@ -179,11 +180,12 @@ def get_dependency_results_and_same_dependency_result(words_structure_result, de
     return dependency_paths_result
 
 
-def get_word_from_str(s):
-    second_colon_pos = s.find('：', s.find('：') + 1)
-    temp_str = s[second_colon_pos + 1:].strip()
-    if temp_str == 'VB':
-        return temp_str
+def get_word_from_str(s, Flag = False):
+    if Flag:
+        second_colon_pos = s.find('：', s.find('：') + 1)
+        temp_str = s[second_colon_pos + 1:].strip()
+        if temp_str == 'VB':
+            return temp_str
     return s[s.find('：') + 1: s.find(',')].strip()  # 从冒号之后的字符开始取到字符串结束
 
 
@@ -204,7 +206,15 @@ def get_word_pos_from_str(s):
 def check_dependency_equality(struct_word_str, question_word_str, dependency_words, sentence):
     struct_word = get_word_from_str(struct_word_str)
     question_word = get_word_from_str(question_word_str)
-    if struct_word == question_word: return False
+
+    ###
+    # for relation, words in dependency_words:
+    #     head_word, word = words
+    #     if question_word == head_word and struct_word == word and relation == 'root':
+    #         print(f'{sentence}  存在疑问词=句型词=root')
+    ###
+
+    if struct_word == question_word: return True
     for relation, words in dependency_words:
         head_word, word = words
         if question_word == head_word and struct_word == word or question_word == word and struct_word == head_word:
@@ -225,15 +235,21 @@ def get_all_question_word_pos(question_word, dependency_relations_and_words):
     for relation_and_words in dependency_relations_and_words:
         relation, (head_word, word) = relation_and_words
         if word == question_word or head_word == question_word:
-            have_relations.add(relation.upper().replace(':', '_'))
+            have_relations.add((relation.upper().replace(':', '_'), 1 if head_word == question_word else 2))
     # print(have_relations)
     result = []
     for relation in all_pos:
-        if relation in have_relations:
-            result.append(True)
+        if (relation, 1) in have_relations:
+            result.append(1)
+        elif (relation, 2) in have_relations:
+            result.append(2)
         else:
-            result.append(False)
+            result.append(0)
+        # print(relation, result[-1])
+
     return result
+
+
 
 
 if __name__ == "__main__":
@@ -259,7 +275,7 @@ if __name__ == "__main__":
 
         # 是否同依赖
         temp_list.append(check_dependency_equality(words_structure_result[index], question_words[index], dependency_result[index], all_sentences_list[index]))
-
+        # print(all_sentences_list[index], check_dependency_equality(words_structure_result[index], question_words[index], dependency_result[index], all_sentences_list[index]))
         # 依赖路径
         dependencyResolver = DependencyResolver(question_words[index], words_structure_result[index],
                                                 dependency_result[index], all_sentences_list[index])
@@ -269,7 +285,10 @@ if __name__ == "__main__":
         temp_list.append('疑问句' if all_sentences_list[index][-1] == '?' else '陈述句')
 
         # 句型词
-        temp_list.append(get_word_from_str(words_structure_result[index]))
+        temp_list.append(get_word_from_str(words_structure_result[index], True))
+        # 乱搞特判
+        if temp_list[-1] == 'How' and all_sentences_list[index].find('How many') != -1:
+            temp_list[-1] = 'How many'
 
         # 句型词词性
         temp_list.append(get_word_pos_from_str(words_structure_result[index]))
@@ -277,15 +296,11 @@ if __name__ == "__main__":
         # 疑问词词性
         temp_list.append(get_word_pos_from_str(question_words[index]))
 
-        # 返回值(1, 0, 0, 1, ...) 表示疑问词是否存在第i个依赖关系中
+        # 返回值(x1, x2, x3, x4, ...), xi∈(-1, 0, 1)  xi = 0表示疑问词不存在第i个依赖关系中, xi = 1 表示疑问词在第i个关系上的第一个位置上(head_word), xi = 2 表示疑问词在第i个关系上的第二个位置上(wrod)
         all_relations_pos = get_all_question_word_pos(get_word_from_str(question_words[index]), dependency_result[index])
         for pos in all_relations_pos: temp_list.append(pos)
-
         data_list.append(temp_list)
-        sentece_data = SentenceDataORM()
-        sentece_data.create_sentence_data_from_list(temp_list)
-        # print(sentece_data)
 
-    insert_data(data_list)
+    # insert_data(data_list)
     end_time = time.time()
     print('执行时间：', end_time - start_time, 's')

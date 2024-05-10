@@ -84,9 +84,11 @@ class DependencyResolver:
             return ''
         for ration, words in self.dependency_relations:
             if words[0] == word and words[1] == target_word:
-                return [f'{ration}：-->']
+                return ''
+                # return [f'{ration}：-->']
             if words[0] == target_word and words[1] == word:
-                return [f'{ration}：<--']
+                return ''
+                # return [f'{ration}：<--']
 
         self.used_word[word] = True
         self.find_dependency_paths(word, target_word, [])
@@ -111,12 +113,11 @@ class DependencyResolver:
             #     print(type(dependency_path))
             # print('\n\n')
         else:
-            print('类型二：')
-            print(f'{self.sentence}')
+            print(f'类型二：{self.sentence}')
 
 
         if(len(self.dependency_paths_list) > 1):
-            print(self.sentence, len(self.dependency_paths_list))
+            print(f'最短路不唯一：{self.sentence}   {len(self.sentence)}')
 
 
         # print('----------------------end-----------------------------\n')

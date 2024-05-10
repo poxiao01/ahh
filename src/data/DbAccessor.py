@@ -1,10 +1,11 @@
+# -*- coding: utf-8 -*-
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, text
 from sqlalchemy import delete
-from Data.SentenceDataORM import SentenceDataORM
 import csv
 from sqlalchemy import select
 from pathlib import Path
+from src.data.SentenceDataORM import SentencesDataORM
 # SQL Server 连接信息
 database='Data'  # 输入你的数据库名
 server='localhost,1433'  # 输入你的服务器地址和端口，通常默认端口是1433
@@ -13,15 +14,12 @@ password='123456'  # 输入你的密码
 driver='ODBC+Driver+17+for+SQL+Server'  # 这是SQL Server驱动
 # 创建数据库链接
 engine = create_engine(f'mssql+pyodbc://{username}:{password}@{server}/{database}?driver={driver}')
-
 session = Session(engine)
 
 def insert_data(data_list):
     for temp_list in data_list:
         # ... 处理和填充temp_list的逻辑保持不变 ...
-        sentece_data = SentenceDataORM()
-        sentece_data = sentece_data.create_sentence_data_from_list(temp_list)  # 注意这里直接赋值返回的新实例
-        # print(sentece_data.to_string())
+        sentece_data = SentencesDataORM.create_sentence_data_from_list(temp_list)
         # 添加实例到会话
         session.add(sentece_data)
 
@@ -41,7 +39,7 @@ def clear_table():
     清空 SentenceDataORM 对应的数据表。
     """
     # 构造 DELETE 语句
-    delete_statement = delete(SentenceDataORM)
+    delete_statement = delete(SentencesDataORM)
 
     # 执行 DELETE 语句
     try:

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import json
 
 from sqlalchemy import Column, Integer, String, Boolean, create_engine
@@ -103,7 +104,8 @@ class SentencesDataORM(Base):
         根据temp_list中的数据创建SentenceDataORM实例。
         假设temp_list的元素顺序与SentenceDataORM的字段顺序一致。
         """
-        field_names = [c_attr.key for c_attr in cls.__table__.columns]
+        # 移除ID字段，确保temp_list中不包含ID且长度匹配
+        field_names = [c_attr.key for c_attr in cls.__table__.columns if c_attr.key != 'ID']
         assert len(temp_list) == len(field_names), "temp_list的长度与字段数量不匹配"
 
         # 使用类方法处理特殊字段
