@@ -100,8 +100,8 @@ def get_sentences_dependencies_paths(sentences_list, questions_words_list, struc
     然后将这些路径收集到一个列表中返回。依赖路径反映了句型词到疑问词的最短路径。
 
     :param sentences_list: 句子列表，每个元素是一个字符串。
-    :param questions_words_list: 问题词列表，对应于每个句子的关键查询词。
-    :param structure_words_and_pos_list: 结构词及其词性列表，每个元素是一个元组，包含结构词和其词性。
+    :param questions_words_list: 疑问词列表，对应于每个句子的疑问词。
+    :param structure_words_and_pos_list: 句型词及其词性列表，每个元素是一个元组，对应于每个句子的句型词和其词性。
     :param all_words_dependencies_relations: 所有单词的依赖关系列表，与句子一一对应，每个元素是该句子的依赖关系列表。
     :return: 二维列表，每个内部列表包含单个句子的所有依赖路径。
     """
