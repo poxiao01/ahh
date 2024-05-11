@@ -97,7 +97,7 @@ def get_sentences_dependencies_paths(sentences_list, questions_words_list, struc
     计算并收集每个句子的依赖路径列表。
 
     此函数遍历给定的句子列表，并为每个句子利用`DependencyResolver`类计算依赖路径，
-    然后将这些路径收集到一个列表中返回。依赖路径反映了问题词到结构词的最短路径。
+    然后将这些路径收集到一个列表中返回。依赖路径反映了句型词到疑问词的最短路径。
 
     :param sentences_list: 句子列表，每个元素是一个字符串。
     :param questions_words_list: 问题词列表，对应于每个句子的关键查询词。
