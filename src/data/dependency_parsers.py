@@ -148,7 +148,6 @@ def map_question_word_positions_to_relations(word, dependency_relations):
         'MARK', 'ADVCL_RELCL', 'ADVMOD', 'NMOD', 'IOBJ', 'DET_PREDET', 'FIXED',
         'DET', 'COMPOUND', 'NSUBJ'
     ]
-
     # 收集给定词出现的关系及位置信息
     detected_relations = set()
     for rel, (head, dep) in dependency_relations:
@@ -165,5 +164,4 @@ def map_question_word_positions_to_relations(word, dependency_relations):
             position_markers.append(2)
         else:
             position_markers.append(0)
-
     return position_markers
