@@ -21,7 +21,7 @@ def read_sentences_and_questions_from_directory(directory_path):
 
         返回:
             tuple: 一个包含两个元素的元组，第一个元素是去重后的句子列表，第二个元素是疑问词列表。
-                   疑问词列表的长度可能少于句子列表，对应没有疑问词的句子将被忽略。
+                   疑问词列表的长度等于句子列表长度。
 
         示例调用:
             directory_path = 'your/directory/path'
