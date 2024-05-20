@@ -17,6 +17,7 @@ class SentencesDataORM(Base):
     SENTENCE_PATTERN = Column(String(255))
     SENTENCE_STRUCTURE_WORD = Column(String(255))
     SENTENCE_STRUCTURE_WORD_POS = Column(String(255))
+    QUESTION_WORD = Column(String(255))
     QUESTION_WORD_POS = Column(String(255))
 
     SENTENCE_NUMMOD = Column(Integer)

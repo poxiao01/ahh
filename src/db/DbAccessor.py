@@ -27,9 +27,9 @@ session = Session(engine)
 # 插入数据到数据库
 def insert_data(data_list):
     for temp_list in data_list:
-        # 假设这里有一系列处理temp_list并准备数据的逻辑
+        # 处理temp_list并准备数据
         sentence_data = SentencesDataORM.create_sentence_data_from_list(temp_list)
-        session.add(sentence_data)  # 准备添加数据到Session
+        session.add(sentence_data)  # 添加数据到Session
 
     try:
         session.commit()  # 提交事务

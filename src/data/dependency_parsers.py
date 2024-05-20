@@ -74,15 +74,22 @@ def find_structure_word(sentence):
     返回:
     tuple: 句型起始词及其词性，或('null', 'null')如果未能识别。
     """
+    auxiliary_set = {'who', 'what', 'when', 'which', 'how', 'where', 'whose'}
+
+    # 若句首为动词, 选择句首动词为句型词
+    if sentence.words[0].xpos == 'VB':
+        return sentence.words[0].text, sentence.words[0].xpos
+
     for word in sentence.words:
-        # 查找以W开头的词性作为句型词，排除'FW'
-        if word.xpos.startswith('W') and word.xpos != 'FW':
+        # 以 auxiliary_set 内的词为句型词
+        if word.text.lower() in auxiliary_set:
             return word.text, word.xpos
 
-    # 如果没有找到W开头的词性，尝试查找动词作为句型词
+    # 尝试查找动词作为句型词
     for word in sentence.words:
         if word.xpos.startswith('V'):
             return word.text, word.xpos
+
     # 最后尝试寻找小写词作为句型词
     for word in sentence.words:
         if word.text.islower():

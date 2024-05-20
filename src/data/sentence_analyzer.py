@@ -50,6 +50,9 @@ class SentenceAnalyzer:
         # 句型词词性
         result_list.append(structure_word_and_pos[1])
 
+        # 疑问词
+        result_list.append(question_word_and_pos[0])
+
         # 疑问词词性
         result_list.append(question_word_and_pos[1])
 
