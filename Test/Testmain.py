@@ -28,13 +28,7 @@ if __name__ == '__main__':
     result_data = []
     for (index, sentence) in enumerate(sentences_list):
         sentenceAnalyzer = SentenceAnalyzer()
-        # def analyze_sentence(sentence, question_word_and_pos, structure_word_and_pos, dependency_relations):
         result_data.append(sentenceAnalyzer.analyze_sentence(sentence, question_words_and_pos_list[index],
                                                              structure_words_and_pos_list[index],
                                                              all_words_dependencies_relations[index]))
-    # for data in result_data:
-    #     print(data)
     insert_data(result_data)
-    # print(result_data)
-    # clear_table()
-    # query_and_save_all_to_csv(SentencesDataORM, 'E:/python_stanford_NLP/all_sentence_data.csv')

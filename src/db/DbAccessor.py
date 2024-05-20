@@ -24,6 +24,7 @@ driver = 'ODBC+Driver+17+for+SQL+Server'  # SQL Server驱动
 engine = create_engine(f'mssql+pyodbc://{username}:{password}@{server}/{database}?driver={driver}')
 session = Session(engine)
 
+
 # 插入数据到数据库
 def insert_data(data_list):
     for temp_list in data_list:
@@ -39,6 +40,7 @@ def insert_data(data_list):
     finally:
         session.close()  # 关闭Session
 
+
 # 清空SentenceDataORM对应的数据表
 def clear_table():
     try:
@@ -52,6 +54,7 @@ def clear_table():
         print(f"清空表数据时出错: {e}")
     finally:
         session.close()
+
 
 # 查询表中所有数据并保存到CSV
 def query_and_save_all_to_csv(model, filepath):
@@ -75,3 +78,21 @@ def query_and_save_all_to_csv(model, filepath):
     finally:
         session.close()
 
+
+def query_and_save_to_list(model):
+    try:
+        query = select(model.__table__)  # 构造查询
+        result = session.execute(query)
+        headers = result.keys()  # 获取列名
+
+        # 将查询结果转换为列表字典形式
+        data_list = [dict(zip(headers, row)) for row in result.fetchall()]
+
+        print("数据已成功保存到内存中的列表")
+        return data_list
+
+    except Exception as e:
+        print(f"查询或处理数据时出错: {e}")
+        return None
+    finally:
+        session.close()
