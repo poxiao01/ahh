@@ -42,7 +42,7 @@ class DependencyResolver:
         """
         visited = set()
         visited.add(self.structure_word)
-        self._dfs(self.structure_word, self.question_word, [], set())
+        self._dfs(self.structure_word, self.question_word, [], visited)
         visited.remove(self.structure_word)
 
         # 如果有多条最短路径，保留它们；否则，保持当前找到的路径
@@ -69,12 +69,13 @@ class DependencyResolver:
             self.dependency_paths_list.append(current_path)
             return
 
-        visited.add(current_word)
+
         if current_word in self.edge_dict:
             for next_word, relation, _ in self.edge_dict[current_word]:
                 if next_word not in visited:
+                    visited.add(next_word)
                     self._dfs(next_word, target_word, current_path + [f'[{relation}：{_}]'], visited)
-        visited.remove(current_word)
+                    visited.remove(next_word)
 
     def get_dependency_paths(self):
         """

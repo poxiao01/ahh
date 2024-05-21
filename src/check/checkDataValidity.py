@@ -3,7 +3,7 @@
 
 # 导入必要的库
 import stanza
-import re
+from src.check.DependencyPathValidatorUtils import DependencyPathValidator
 from src.data.dependency_parsers import find_structure_word
 from src.db.DbAccessor import query_and_save_to_list
 from src.models.SentenceDataORM import SentencesDataORM
@@ -51,9 +51,6 @@ def extract_dependency_paths_from_str(dependency_path_str):
         start_index = end_index  # 更新搜索起始位置到当前结束方括号之后
 
     return dependency_pairs
-
-
-
 
 
 # 遍历数据列表，执行数据验证逻辑
@@ -148,12 +145,17 @@ for data_item in data_list:
             if position != data_item[key]:
                 handle_error(data_item, f"{key}(句型词依赖位置)字段错误！")
 
-
     # 验证依赖路径的正确性
-    dependency_path = extract_dependency_paths_from_str(data_item['DEPENDENCY_PATH'])
+    dependency_path_list = extract_dependency_paths_from_str(data_item['DEPENDENCY_PATH'])
+    if (data_item['SAME_QS_WORD'] | data_item['SAME_DEPENDENCY']) == True:
+        if len(dependency_path_list) != 0:
+            handle_error(data_item, f"DEPENDENCY_PATH(依赖路径)字段错误！")
+    else:
+        validator_instance = DependencyPathValidator(data_item['QUESTION_WORD'],
+                                                     data_item['SENTENCE_STRUCTURE_WORD'],
+                                                     sentence_dependency_list,
+                                                     dependency_path_list)
 
-    print(data_item['DEPENDENCY_PATH'], type(data_item['DEPENDENCY_PATH']))
-    print(dependency_path)
-    for x in dependency_path:
-        print(x)
-    print('\n\n')
+        if not validator_instance.check_dependency_path():
+            print(dependency_path_list)
+            handle_error(data_item, f"DEPENDENCY_PATH(依赖路径)字段错误！")
