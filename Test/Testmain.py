@@ -3,7 +3,6 @@ from src.db.DbAccessor import insert_data, clear_table, query_and_save_all_to_cs
 from src.data.dependency_parsers import extract_dependency_structure, get_sentences_dependencies_paths
 from src.data.loaders import read_sentences_and_questions_from_directory
 from src.data.sentence_analyzer import SentenceAnalyzer
-from src.models import SentenceDataORM
 from src.models.SentenceDataORM import SentencesDataORM
 from src.utils.file_utils import save_to_txt
 
