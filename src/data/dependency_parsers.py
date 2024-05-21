@@ -157,6 +157,7 @@ def map_question_word_positions_to_relations(word, dependency_relations):
     ]
     # 收集给定词出现的关系及位置信息
     detected_relations = set()
+
     for rel, (head, dep) in dependency_relations:
         if word in (head, dep):
             position = 1 if head == word else 2
