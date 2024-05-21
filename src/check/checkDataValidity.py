@@ -3,6 +3,7 @@
 
 # 导入必要的库
 import stanza
+import re
 from src.data.dependency_parsers import find_structure_word
 from src.db.DbAccessor import query_and_save_to_list
 from src.models.SentenceDataORM import SentencesDataORM
@@ -21,6 +22,38 @@ data_list = query_and_save_to_list(SentencesDataORM)
 # 定义错误处理函数
 def handle_error(data_item, message):
     print(f"错误：{message}\n句子ID: {data_item['ID']}, 句子内容: {data_item['SENTENCE']}\n\n")
+
+
+# 验证并提取依赖路径的正确性
+
+def extract_dependency_paths_from_str(dependency_path_str):
+    """从依赖路径字符串中提取依赖关系对"""
+    dependency_pairs = []
+    start_index = 1
+
+    while start_index < len(dependency_path_str):
+        start_index = dependency_path_str.find('[', start_index)
+        if start_index == -1:  # 如果没有找到起始方括号，则结束循环
+            break
+
+        end_index = dependency_path_str.find(']', start_index)  # 寻找对应结束方括号
+        if end_index == -1:  # 确保找到了结束方括号
+            raise ValueError("Invalid format: missing closing bracket.")
+
+        # 提取方括号内的内容并分割
+        inner_content = dependency_path_str[start_index + 1:end_index]
+        parts = inner_content.split('：', 1)  # 注意这里使用中文冒号进行分割
+
+        if len(parts) != 2:  # 确保分割后得到两个部分
+            raise ValueError(f"Invalid inner content format at index {start_index}: {inner_content}")
+
+        dependency_pairs.append(tuple(parts))
+        start_index = end_index  # 更新搜索起始位置到当前结束方括号之后
+
+    return dependency_pairs
+
+
+
 
 
 # 遍历数据列表，执行数据验证逻辑
@@ -86,26 +119,41 @@ for data_item in data_list:
     for relation in all_relations:
         question_str = 'QUESTION_' + relation
         struct_str = 'SENTENCE_' + relation
-
+        question_pos_position[question_str] = []
+        struct_pos_position[struct_str] = []
         for rel, (head, dep) in sentence_dependency_list:
             rel = rel.upper().replace(':', '_')
             if rel == relation and data_item['QUESTION_WORD'] in (head, dep):
                 position = 1 if head == data_item['QUESTION_WORD'] else 2
-                question_pos_position[question_str] = position
+                question_pos_position[question_str].append(position)
 
             if rel == relation and data_item['SENTENCE_STRUCTURE_WORD'] in (head, dep):
                 position = 1 if head == data_item['SENTENCE_STRUCTURE_WORD'] else 2
-                struct_pos_position[struct_str] = position
+                struct_pos_position[struct_str].append(position)
 
-        if question_str not in question_pos_position:
-            question_pos_position[question_str] = 0
-        if struct_str not in struct_pos_position:
-            struct_pos_position[struct_str] = 0
+        if len(question_pos_position[question_str]) == 0:
+            question_pos_position[question_str].append(0)
+        if len(struct_pos_position[struct_str]) == 0:
+            struct_pos_position[struct_str].append(0)
 
+    # 验证疑问词词性位置是否正确标注
     for key, val in question_pos_position.items():
-        if val != data_item[key]:
-            print(f'{key}:{val}    {data_item[key]}')
-            handle_error(data_item, f"{key}(疑问词依赖位置)字段错误！")
+        for position in val:
+            if position != data_item[key]:
+                handle_error(data_item, f"{key}(疑问词依赖位置)字段错误！")
+
+    # 验证句型词词性位置是否正确标注
     for key, val in struct_pos_position.items():
-        if val != data_item[key]:
-            handle_error(data_item, f"{key}(句型词依赖位置)字段错误！")
+        for position in val:
+            if position != data_item[key]:
+                handle_error(data_item, f"{key}(句型词依赖位置)字段错误！")
+
+
+    # 验证依赖路径的正确性
+    dependency_path = extract_dependency_paths_from_str(data_item['DEPENDENCY_PATH'])
+
+    print(data_item['DEPENDENCY_PATH'], type(data_item['DEPENDENCY_PATH']))
+    print(dependency_path)
+    for x in dependency_path:
+        print(x)
+    print('\n\n')
