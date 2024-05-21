@@ -79,9 +79,33 @@ for data_item in data_list:
         'MARK', 'ADVCL_RELCL', 'ADVMOD', 'NMOD', 'IOBJ', 'DET_PREDET', 'FIXED',
         'DET', 'COMPOUND', 'NSUBJ'
     ]
-    # 收集给定词出现的关系及位置信息
-    detected_relations = set()
-    for rel, (head, dep) in sentence_dependency_list:
-        if word in (head, dep):
-            position = 1 if head == word else 2
-            detected_relations.add((rel.upper().replace(':', '_'), position))
+
+    question_pos_position = dict()
+    struct_pos_position = dict()
+
+    for relation in all_relations:
+        question_str = 'QUESTION_' + relation
+        struct_str = 'SENTENCE_' + relation
+
+        for rel, (head, dep) in sentence_dependency_list:
+            rel = rel.upper().replace(':', '_')
+            if rel == relation and data_item['QUESTION_WORD'] in (head, dep):
+                position = 1 if head == data_item['QUESTION_WORD'] else 2
+                question_pos_position[question_str] = position
+
+            if rel == relation and data_item['SENTENCE_STRUCTURE_WORD'] in (head, dep):
+                position = 1 if head == data_item['SENTENCE_STRUCTURE_WORD'] else 2
+                struct_pos_position[struct_str] = position
+
+        if question_str not in question_pos_position:
+            question_pos_position[question_str] = 0
+        if struct_str not in struct_pos_position:
+            struct_pos_position[struct_str] = 0
+
+    for key, val in question_pos_position.items():
+        if val != data_item[key]:
+            print(f'{key}:{val}    {data_item[key]}')
+            handle_error(data_item, f"{key}(疑问词依赖位置)字段错误！")
+    for key, val in struct_pos_position.items():
+        if val != data_item[key]:
+            handle_error(data_item, f"{key}(句型词依赖位置)字段错误！")

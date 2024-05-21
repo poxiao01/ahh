@@ -160,7 +160,9 @@ def map_question_word_positions_to_relations(word, dependency_relations):
     for rel, (head, dep) in dependency_relations:
         if word in (head, dep):
             position = 1 if head == word else 2
-            detected_relations.add((rel.upper().replace(':', '_'), position))
+            temp_str = rel.upper().replace(':', '_')
+            if temp_str in detected_relations and detected_relations[temp_str] != 1:
+                detected_relations.add((temp_str, position))
 
     # 初始化结果列表，根据所有可能的依存关系类型填充
     position_markers = []
